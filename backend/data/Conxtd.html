@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Conxtd - Viewscape 11.37.1 Manual</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Introduction.html"><strong aria-hidden="true">1.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Integrations</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Integrations/Active Directory.html"><strong aria-hidden="true">2.1.</strong> Active Directory</a></li><li class="chapter-item expanded "><a href="../Integrations/Adpro.html"><strong aria-hidden="true">2.2.</strong> Adpro</a></li><li class="chapter-item expanded "><a href="../Integrations/AMAG.html"><strong aria-hidden="true">2.3.</strong> AMAG</a></li><li class="chapter-item expanded "><a href="../Integrations/Assa Abloy.html"><strong aria-hidden="true">2.4.</strong> Assa Abloy</a></li><li class="chapter-item expanded "><a href="../Integrations/Avigilon.html"><strong aria-hidden="true">2.5.</strong> Avigilon</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Camera Station.html"><strong aria-hidden="true">2.6.</strong> Axis Camera Station</a></li><li class="chapter-item expanded "><a href="../Integrations/AXIS IO.html"><strong aria-hidden="true">2.7.</strong> AXIS IO</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Virtual Camera.html"><strong aria-hidden="true">2.8.</strong> Axis Virtual Camera</a></li><li class="chapter-item expanded "><a href="../Integrations/Bosch Analytics Motion.html"><strong aria-hidden="true">2.9.</strong> Bosch Analytics Motion</a></li><li class="chapter-item expanded "><a href="../Integrations/BVMS.html"><strong aria-hidden="true">2.10.</strong> Bosch BVMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore Footage Nuke.html"><strong aria-hidden="true">2.11.</strong> Coldstore Footage Nuke</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore NVR.html"><strong aria-hidden="true">2.12.</strong> Coldstore NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Commend.html"><strong aria-hidden="true">2.13.</strong> Commend</a></li><li class="chapter-item expanded "><a href="../Integrations/Conxtd.html" class="active"><strong aria-hidden="true">2.14.</strong> Conxtd</a></li><li class="chapter-item expanded "><a href="../Integrations/CSL Dualcom.html"><strong aria-hidden="true">2.15.</strong> CSL Dualcom</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics ANPR.html"><strong aria-hidden="true">2.16.</strong> Daktronics ANPR</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics.html"><strong aria-hidden="true">2.17.</strong> Daktronics</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros Alarms.html"><strong aria-hidden="true">2.18.</strong> Dedicated Micros Alarms</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros V9.html"><strong aria-hidden="true">2.19.</strong> Dedicated Micros V9</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec User.html"><strong aria-hidden="true">2.20.</strong> Entrotec User</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec.html"><strong aria-hidden="true">2.21.</strong> Entrotec</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun Requirements.html"><strong aria-hidden="true">2.22.</strong> EverRun Requirements</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun.html"><strong aria-hidden="true">2.23.</strong> EverRun</a></li><li class="chapter-item expanded "><a href="../Integrations/Failover Solutions.html"><strong aria-hidden="true">2.24.</strong> Failover Solutions</a></li><li class="chapter-item expanded "><a href="../Integrations/GDPR Manual.html"><strong aria-hidden="true">2.25.</strong> GDPR Manual</a></li><li class="chapter-item expanded "><a href="../Integrations/Guard Tour.html"><strong aria-hidden="true">2.26.</strong> Guard Tour</a></li><li class="chapter-item expanded "><a href="../Integrations/Hanwha.html"><strong aria-hidden="true">2.27.</strong> Hanwha</a></li><li class="chapter-item expanded "><a href="../Integrations/Heitel.html"><strong aria-hidden="true">2.28.</strong> Heitel</a></li><li class="chapter-item expanded "><a href="../Integrations/Hikvision Audio.html"><strong aria-hidden="true">2.29.</strong> Hikvision Audio</a></li><li class="chapter-item expanded "><a href="../Integrations/Honeywell Morley.html"><strong aria-hidden="true">2.30.</strong> Honeywell Morley</a></li><li class="chapter-item expanded "><a href="../Integrations/Integrations.html"><strong aria-hidden="true">2.31.</strong> Integrations</a></li><li class="chapter-item expanded "><a href="../Integrations/Milestone.html"><strong aria-hidden="true">2.32.</strong> Milestone</a></li><li class="chapter-item expanded "><a href="../Integrations/North BT.html"><strong aria-hidden="true">2.33.</strong> North BT</a></li><li class="chapter-item expanded "><a href="../Integrations/nx-witness.html"><strong aria-hidden="true">2.34.</strong> NX Witness</a></li><li class="chapter-item expanded "><a href="../Integrations/Panasonic.html"><strong aria-hidden="true">2.35.</strong> Panasonic</a></li><li class="chapter-item expanded "><a href="../Integrations/Paxton V9 Migration.html"><strong aria-hidden="true">2.36.</strong> Paxton V9 Migration</a></li><li class="chapter-item expanded "><a href="../Integrations/Pelco Endura.html"><strong aria-hidden="true">2.37.</strong> Pelco Endura</a></li><li class="chapter-item expanded "><a href="../Integrations/RTSP.html"><strong aria-hidden="true">2.38.</strong> RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Samsung RTSP.html"><strong aria-hidden="true">2.39.</strong> Samsung RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Scantronics.html"><strong aria-hidden="true">2.40.</strong> Scantronics</a></li><li class="chapter-item expanded "><a href="../Integrations/SIP.html"><strong aria-hidden="true">2.41.</strong> SIP</a></li><li class="chapter-item expanded "><a href="../Integrations/SNMP.html"><strong aria-hidden="true">2.42.</strong> SNMP</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon Audio NVR.html"><strong aria-hidden="true">2.43.</strong> Stentofon Audio NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon.html"><strong aria-hidden="true">2.44.</strong> Stentofon</a></li><li class="chapter-item expanded "><a href="../Integrations/TDS.html"><strong aria-hidden="true">2.45.</strong> TDS</a></li><li class="chapter-item expanded "><a href="../Integrations/TDSi.html"><strong aria-hidden="true">2.46.</strong> TDSi</a></li><li class="chapter-item expanded "><a href="../Integrations/Texecom.html"><strong aria-hidden="true">2.47.</strong> Texecom</a></li><li class="chapter-item expanded "><a href="../Integrations/UNV.html"><strong aria-hidden="true">2.48.</strong> UNV</a></li><li class="chapter-item expanded "><a href="../Integrations/Vehant ITMS.html"><strong aria-hidden="true">2.49.</strong> Vehant ITMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Vemotion.html"><strong aria-hidden="true">2.50.</strong> Vemotion</a></li><li class="chapter-item expanded "><a href="../Integrations/Videonetics.html"><strong aria-hidden="true">2.51.</strong> Videonetics</a></li><li class="chapter-item expanded "><a href="../Integrations/ViewCast.html"><strong aria-hidden="true">2.52.</strong> ViewCast</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Keyboard.html"><strong aria-hidden="true">2.53.</strong> Viewscape Keyboard</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Motion Dection.html"><strong aria-hidden="true">2.54.</strong> Viewscape Motion Dection</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Viewscape Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Viewscape Systems/Desktop.html"><strong aria-hidden="true">3.1.</strong> Desktop</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Export Manager.html"><strong aria-hidden="true">3.2.</strong> Export Manager</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Controls.html"><strong aria-hidden="true">3.3.</strong> Pro Controls</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Server.html"><strong aria-hidden="true">3.4.</strong> Pro Server</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Surface.html"><strong aria-hidden="true">3.5.</strong> Surface</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape Systems.html"><strong aria-hidden="true">3.6.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape-Systems.html"><strong aria-hidden="true">3.7.</strong> Viewscape-Systems</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Viewscape 11.37.1 Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="conxtd"><a class="header" href="#conxtd">Conxtd</a></h1>
+<p>Conxtd Integration</p>
+<h3 id="developers"><a class="header" href="#developers">Developers</a></h3>
+<ul>
+<li>Paul bell</li>
+</ul>
+<h1 id="contents"><a class="header" href="#contents">Contents</a></h1>
+<ul>
+<li><a href="#overview">Overview</a>
+<ul>
+<li><a href="#functionality">Functionality</a></li>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+</ul>
+</li>
+<li><a href="#installation">Installation</a>
+<ul>
+<li><a href="#conxtd-web-server">Conxtd Web Server</a></li>
+<li><a href="#viewscape-server">Viewscape Server</a></li>
+</ul>
+</li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#support">Support</a></li>
+</ul>
+<h1 id="overview"><a class="header" href="#overview">Overview</a></h1>
+<p>This document outlines the features Viewscape supports for integrating with
+Conxtd to accept events from their cloud based service.</p>
+<h2 id="functionality"><a class="header" href="#functionality">Functionality</a></h2>
+<ul>
+<li>Listen and accept new events from edge devices (ie dualcom) routed through the Conxtd network forwarded to Viewscape.</li>
+</ul>
+<h2 id="pre-requisites"><a class="header" href="#pre-requisites">Pre-requisites</a></h2>
+<ul>
+<li>Publicly accessible web domain, with valid SSL certificate https authentication.</li>
+<li>fullchain.pem and privkey.pem SSL certificate files from the web domain.</li>
+<li>Port fowarding of https (tcp 443) to Viewscape Conxtd web server app.</li>
+<li>.Net Core 6 for Viewscape Conxtd web server app.</li>
+<li>Open connection from Viewscape Conxtd web server app to Viescape Server ViewscapeLinkRemotePort.</li>
+</ul>
+<h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
+<p>A separate 'Viewscape Conxtd web server app' is required to be installed on a suitable machine (server side).</p>
+<h2 id="conxtd-web-server"><a class="header" href="#conxtd-web-server">Conxtd Web Server</a></h2>
+<ul>
+<li>The Viewscape Conxtd web server app (folder copy/no installer needed) will need to be installed on the machine where the domain https port forwarding is directed to.
+The Viewscape Conxtd web server can be found under Deployment/Integrations/Conxtd [citation needed].</li>
+<li>Configure the appsettings.json file within the web app folder using a suitable text editor:
+<ul>
+<li><strong>MCPAddress, MCPPort</strong>
+<ul>
+<li>Viewscape Server ViewscapeLinkRemotePort details.</li>
+</ul>
+</li>
+<li><strong>UseUrls</strong>
+<ul>
+<li>This defines what port the web app is listening on for https (and http, but not required). Change this to the port forwarded from the public web domain (ie public web domain https port 443 ported to web server app port 5004)</li>
+</ul>
+</li>
+<li><strong>Kestrel Certificates</strong>
+<ul>
+<li>File paths to the fullchain.pem and privkey.pem SSL certificates for the web domain.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Run VSConxtd.exe</li>
+</ul>
+<p><img src="Screenshots/Conxtd/conxtd-webserver.png" alt="" /></p>
+<p>Normal running example.</p>
+<h2 id="viewscape-server"><a class="header" href="#viewscape-server">Viewscape Server</a></h2>
+<p>ProServer.ViewscapeLinkRemotePort setting valid.</p>
+<h1 id="usage"><a class="header" href="#usage">Usage</a></h1>
+<p>Devices in Viewscape need configuring to accept specific Conxtd events. There are two devices available for Conxtd in Viewscape:</p>
+<h2 id="conxtd-site"><a class="header" href="#conxtd-site">Conxtd Site</a></h2>
+<p><img src="Screenshots/Conxtd/conxtd-devicesite.png" alt="" /></p>
+<p>Each Conxtd site must have a separate device record in Viewscape. Site ID corresponds to the 'unique_site_id' from Conxtd.</p>
+<h2 id="conxtd-event"><a class="header" href="#conxtd-event">Conxtd Event</a></h2>
+<p><img src="Screenshots/Conxtd/conxtd-deviceevent.png" alt="" /></p>
+<p>Each Conxtd site may have one or more events. Each Conxtd event must have a separate device record in Viewscape. Event ID corresponds to the 'unique_event_id' from Conxtd, and Parent Site is the corresponding parent Conxtd site device.</p>
+<p>There is one driver event called 'Triggered' which activates when the Conxtd event occurs:</p>
+<p><img src="Screenshots/Conxtd/conxtd-deviceproevent.png" alt="" /></p>
+<h1 id="support"><a class="header" href="#support">Support</a></h1>
+<p>The Viewscape Conxtd web server app is a console based app that shows information on screen, but there is a also a Log.txt generated in the root folder with additional details and error information.</p>
+<h2 id="test-using-postman"><a class="header" href="#test-using-postman">Test using Postman</a></h2>
+<p>To simulate a new event from Conxtd, use Postman to send raw JSON to the web app sub page /Events/new.</p>
+<pre><code>{
+  &quot;site_ref&quot;: &quot;UDL8008&quot;,
+  &quot;transmitter_id&quot;: &quot;8008&quot;,
+  &quot;site_name&quot;: &quot;Home - Mars&quot;,
+  &quot;enterprise_site_id&quot;: 22905,
+  &quot;unique_site_id&quot;: 123,
+  &quot;format&quot;: &quot;Sia&quot;,
+  &quot;raw_event&quot;: &quot;{\&quot;alarm_format\&quot;:1,\&quot;code\&quot;:\&quot;IR\&quot;,\&quot;zone\&quot;:null,\&quot;text\&quot;:\&quot;[#555555|NIR|Aphil@conxtd.com injected this event]\&quot;}&quot;,
+  &quot;alarm_text&quot;: &quot;phil@conxtd.com injected this event]\&quot;}&quot;,
+  &quot;caption&quot;: &quot;Equipment Recovered&quot;,
+  &quot;description&quot;: &quot;Equipment has been found&quot;,
+  &quot;icon&quot;: &quot;cogs&quot;,
+  &quot;class&quot;: &quot;Error&quot;,
+  &quot;event_time_UTC[date]&quot;: &quot;2022-12-02 15:48:54.505871&quot;,
+  &quot;event_time_UTC[timezone_type]&quot;: &quot;3&quot;,
+  &quot;event_time_UTC[timezone]&quot;: &quot;UTC&quot;,
+  &quot;timezone&quot;: &quot;Europe/London&quot;,
+  &quot;signalling&quot;: &quot;WebWayOne&quot;,
+  &quot;system&quot;: &quot;UK Host 1 MCT&quot;,
+  &quot;event_library_id&quot;: &quot;IR&quot;,
+  &quot;unique_event_id&quot;: 546
+}
+</code></pre>
+<p><img src="Screenshots/Conxtd/conxtd-postman.png" alt="" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Integrations/Commend.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../Integrations/CSL Dualcom.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Integrations/Commend.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../Integrations/CSL Dualcom.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

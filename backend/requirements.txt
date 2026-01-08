@@ -1,0 +1,9 @@
+flask
+PyMuPDF           
+beautifulsoup4      
+sentence-transformers
+faiss-cpu
+requests
+python-dotenv
+transformers
+PyPDF2

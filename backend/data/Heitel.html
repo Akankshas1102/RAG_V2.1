@@ -1,0 +1,593 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Heitel - Viewscape 11.37.1 Manual</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Introduction.html"><strong aria-hidden="true">1.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Integrations</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Integrations/Active Directory.html"><strong aria-hidden="true">2.1.</strong> Active Directory</a></li><li class="chapter-item expanded "><a href="../Integrations/Adpro.html"><strong aria-hidden="true">2.2.</strong> Adpro</a></li><li class="chapter-item expanded "><a href="../Integrations/AMAG.html"><strong aria-hidden="true">2.3.</strong> AMAG</a></li><li class="chapter-item expanded "><a href="../Integrations/Assa Abloy.html"><strong aria-hidden="true">2.4.</strong> Assa Abloy</a></li><li class="chapter-item expanded "><a href="../Integrations/Avigilon.html"><strong aria-hidden="true">2.5.</strong> Avigilon</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Camera Station.html"><strong aria-hidden="true">2.6.</strong> Axis Camera Station</a></li><li class="chapter-item expanded "><a href="../Integrations/AXIS IO.html"><strong aria-hidden="true">2.7.</strong> AXIS IO</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Virtual Camera.html"><strong aria-hidden="true">2.8.</strong> Axis Virtual Camera</a></li><li class="chapter-item expanded "><a href="../Integrations/Bosch Analytics Motion.html"><strong aria-hidden="true">2.9.</strong> Bosch Analytics Motion</a></li><li class="chapter-item expanded "><a href="../Integrations/BVMS.html"><strong aria-hidden="true">2.10.</strong> Bosch BVMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore Footage Nuke.html"><strong aria-hidden="true">2.11.</strong> Coldstore Footage Nuke</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore NVR.html"><strong aria-hidden="true">2.12.</strong> Coldstore NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Commend.html"><strong aria-hidden="true">2.13.</strong> Commend</a></li><li class="chapter-item expanded "><a href="../Integrations/Conxtd.html"><strong aria-hidden="true">2.14.</strong> Conxtd</a></li><li class="chapter-item expanded "><a href="../Integrations/CSL Dualcom.html"><strong aria-hidden="true">2.15.</strong> CSL Dualcom</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics ANPR.html"><strong aria-hidden="true">2.16.</strong> Daktronics ANPR</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics.html"><strong aria-hidden="true">2.17.</strong> Daktronics</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros Alarms.html"><strong aria-hidden="true">2.18.</strong> Dedicated Micros Alarms</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros V9.html"><strong aria-hidden="true">2.19.</strong> Dedicated Micros V9</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec User.html"><strong aria-hidden="true">2.20.</strong> Entrotec User</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec.html"><strong aria-hidden="true">2.21.</strong> Entrotec</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun Requirements.html"><strong aria-hidden="true">2.22.</strong> EverRun Requirements</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun.html"><strong aria-hidden="true">2.23.</strong> EverRun</a></li><li class="chapter-item expanded "><a href="../Integrations/Failover Solutions.html"><strong aria-hidden="true">2.24.</strong> Failover Solutions</a></li><li class="chapter-item expanded "><a href="../Integrations/GDPR Manual.html"><strong aria-hidden="true">2.25.</strong> GDPR Manual</a></li><li class="chapter-item expanded "><a href="../Integrations/Guard Tour.html"><strong aria-hidden="true">2.26.</strong> Guard Tour</a></li><li class="chapter-item expanded "><a href="../Integrations/Hanwha.html"><strong aria-hidden="true">2.27.</strong> Hanwha</a></li><li class="chapter-item expanded "><a href="../Integrations/Heitel.html" class="active"><strong aria-hidden="true">2.28.</strong> Heitel</a></li><li class="chapter-item expanded "><a href="../Integrations/Hikvision Audio.html"><strong aria-hidden="true">2.29.</strong> Hikvision Audio</a></li><li class="chapter-item expanded "><a href="../Integrations/Honeywell Morley.html"><strong aria-hidden="true">2.30.</strong> Honeywell Morley</a></li><li class="chapter-item expanded "><a href="../Integrations/Integrations.html"><strong aria-hidden="true">2.31.</strong> Integrations</a></li><li class="chapter-item expanded "><a href="../Integrations/Milestone.html"><strong aria-hidden="true">2.32.</strong> Milestone</a></li><li class="chapter-item expanded "><a href="../Integrations/North BT.html"><strong aria-hidden="true">2.33.</strong> North BT</a></li><li class="chapter-item expanded "><a href="../Integrations/nx-witness.html"><strong aria-hidden="true">2.34.</strong> NX Witness</a></li><li class="chapter-item expanded "><a href="../Integrations/Panasonic.html"><strong aria-hidden="true">2.35.</strong> Panasonic</a></li><li class="chapter-item expanded "><a href="../Integrations/Paxton V9 Migration.html"><strong aria-hidden="true">2.36.</strong> Paxton V9 Migration</a></li><li class="chapter-item expanded "><a href="../Integrations/Pelco Endura.html"><strong aria-hidden="true">2.37.</strong> Pelco Endura</a></li><li class="chapter-item expanded "><a href="../Integrations/RTSP.html"><strong aria-hidden="true">2.38.</strong> RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Samsung RTSP.html"><strong aria-hidden="true">2.39.</strong> Samsung RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Scantronics.html"><strong aria-hidden="true">2.40.</strong> Scantronics</a></li><li class="chapter-item expanded "><a href="../Integrations/SIP.html"><strong aria-hidden="true">2.41.</strong> SIP</a></li><li class="chapter-item expanded "><a href="../Integrations/SNMP.html"><strong aria-hidden="true">2.42.</strong> SNMP</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon Audio NVR.html"><strong aria-hidden="true">2.43.</strong> Stentofon Audio NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon.html"><strong aria-hidden="true">2.44.</strong> Stentofon</a></li><li class="chapter-item expanded "><a href="../Integrations/TDS.html"><strong aria-hidden="true">2.45.</strong> TDS</a></li><li class="chapter-item expanded "><a href="../Integrations/TDSi.html"><strong aria-hidden="true">2.46.</strong> TDSi</a></li><li class="chapter-item expanded "><a href="../Integrations/Texecom.html"><strong aria-hidden="true">2.47.</strong> Texecom</a></li><li class="chapter-item expanded "><a href="../Integrations/UNV.html"><strong aria-hidden="true">2.48.</strong> UNV</a></li><li class="chapter-item expanded "><a href="../Integrations/Vehant ITMS.html"><strong aria-hidden="true">2.49.</strong> Vehant ITMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Vemotion.html"><strong aria-hidden="true">2.50.</strong> Vemotion</a></li><li class="chapter-item expanded "><a href="../Integrations/Videonetics.html"><strong aria-hidden="true">2.51.</strong> Videonetics</a></li><li class="chapter-item expanded "><a href="../Integrations/ViewCast.html"><strong aria-hidden="true">2.52.</strong> ViewCast</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Keyboard.html"><strong aria-hidden="true">2.53.</strong> Viewscape Keyboard</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Motion Dection.html"><strong aria-hidden="true">2.54.</strong> Viewscape Motion Dection</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Viewscape Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Viewscape Systems/Desktop.html"><strong aria-hidden="true">3.1.</strong> Desktop</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Export Manager.html"><strong aria-hidden="true">3.2.</strong> Export Manager</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Controls.html"><strong aria-hidden="true">3.3.</strong> Pro Controls</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Server.html"><strong aria-hidden="true">3.4.</strong> Pro Server</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Surface.html"><strong aria-hidden="true">3.5.</strong> Surface</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape Systems.html"><strong aria-hidden="true">3.6.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape-Systems.html"><strong aria-hidden="true">3.7.</strong> Viewscape-Systems</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Viewscape 11.37.1 Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="wcctv---heitel"><a class="header" href="#wcctv---heitel">WCCTV - Heitel</a></h1>
+<h3 id="developers"><a class="header" href="#developers">Developers</a></h3>
+<p>Duncan Simpson</p>
+<h1 id="contents"><a class="header" href="#contents">Contents</a></h1>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#functionality">Functionality</a></li>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#viewscape-configuration">VTAS Configuration</a></li>
+<li><a href="#support">Support</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+<li><a href="#_Toc414369180">Debugging</a></li>
+<li><a href="#appendix">Appendix</a></li>
+</ul>
+<h1 id="overview"><a class="header" href="#overview">Overview</a></h1>
+<h2 id="recorders"><a class="header" href="#recorders">Recorders</a></h2>
+<p>WCCTV Provide a public IP address for the cameras, and each camera will
+have its own unique port for Web HTTP video and NVR Port. These are both
+required for Viewscape to display live and recorded video</p>
+<h2 id="functionality"><a class="header" href="#functionality">Functionality</a></h2>
+<p>Live and PTZ are achieved by directly requesting the images from the NVR
+(not the CCS). On the device itself both the WEB port and Web API need
+enabling in the options.</p>
+<p>Playback and alarms in VTAS is done via the CCS. The Heitel CCS can be
+added to VTAS from within the lookups section, then specified in the NVR
+setup.</p>
+<p>Export is not possible via the SDK.</p>
+<h2 id="pre-requisites"><a class="header" href="#pre-requisites">Pre-requisites</a></h2>
+<ul>
+<li>Change Viewscape license key</li>
+<li>Stream restrictions</li>
+<li>The SDK contains all files required, these simply need to be
+installed into the correct place. This is done automatically in the
+installation of Pro Server and Surface. The SDK files should be
+found in the Depends folder.</li>
+<li>Viewscape: requires the installation of the Heitel UC setup program.</li>
+</ul>
+<h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
+<ul>
+<li>Install the Heitel UC setup program to enable the playback features.</li>
+<li>On the CCS locate the installation folder, make sure the following
+settings are set up in the file CAMCTRL.ini file:</li>
+</ul>
+<blockquote>
+<p>VIDEOPORTON=1 (MUST BE 1 for video to pass through)</p>
+<p>NUMOFCONN = n (number of video connections)</p>
+<p>SMIMAGEMODE = 0 (to allow display of video)</p>
+<p>HIDE = 1 (hides the video on the CCS software, improves performance)</p>
+<p>** You can also determine the connection port to be used when
+setting up the CCS from within Viewscape (from within lookups) from
+here... It's by default port 5500. **</p>
+</blockquote>
+<ul>
+<li>On each NVR ensure the WEB port is enabled and specified (default is
+port 80), and the Web API is also enabled.</li>
+</ul>
+<h2 id="software"><a class="header" href="#software">Software</a></h2>
+<ul>
+<li>Install Heitel UC setup into &quot;\i-Comply\Heitel UC&quot;</li>
+</ul>
+<h2 id="viewscape-configuration"><a class="header" href="#viewscape-configuration">Viewscape Configuration</a></h2>
+<ul>
+<li>Setup the CCS in Viewscape. Go to lookups-&gt;Heitel Servers. Add a
+new record, specify the IP and Port of the CCS (by default the port
+is 5500)</li>
+<li>Add the NVR etc.
+<ul>
+<li>The port you should use on the NVR form is the web port. This is
+normally 80.</li>
+<li>The devices serial number must be obtained. This can be taken
+from the NVR setup page. This is important as it's the only way
+we can establish which device an alarm has come in for.</li>
+</ul>
+</li>
+<li>For PTZ from the NVR the server setting 'HeitelHttpPTZ' must be set
+to true</li>
+</ul>
+<h2 id="special-consideration-for-ports"><a class="header" href="#special-consideration-for-ports">Special Consideration for Ports</a></h2>
+<p>This can become slightly complicated because of the way the changes have
+evolved when it was realised that we needed another port for use with a
+WCCTV system using a 3G mobile network. In this case setting the
+StreamSurface.exe.config's CustomOptions or StreamSurfaceCustomOptions
+setting to 1 will alter the port used as the table below (hopefully)
+details:</p>
+<div class="table-wrapper"><table><thead><tr><th>Application/Case</th><th>Description</th><th>IP Address</th><th>Port</th></tr></thead><tbody>
+<tr><td>VTAS Playback</td><td>Via the CCS. Using the CCS IP, CCS control port and the NVR IP.</td><td>CCS IP, NVR IP (no port)</td><td>CCS port setting</td></tr>
+<tr><td>Pro Server (PTZ, Alarms)</td><td>Via the CCS. Using the CCS IP, CCS control port and the NVR IP.</td><td>CCS IP, NVR IP (no port)</td><td>CCS port setting</td></tr>
+<tr><td>Surface (Live) Standard</td><td>Taken from the web interface.</td><td></td><td>Only when specified in the NVR IP</td></tr>
+<tr><td>CustomOptions = 1</td><td>Taken from the web interface.</td><td>NVR IP</td><td>NVR PORT</td></tr>
+<tr><td>StreamSurfaceCustomOptions = 1</td><td>Taken from the web interface.</td><td>NVR IP</td><td>NVR PORT</td></tr>
+</tbody></table>
+</div>
+<h2 id="my-first-settings-editor"><a class="header" href="#my-first-settings-editor">My First Settings Editor</a></h2>
+<p>HeitelHttpPTZ -- Pro Server setting -- Determines if the PTZ is done via
+the web port or CCS</p>
+<p>StreamSurfaceCustomOptions -- Surface setting -- Set to 1 to receive
+live video via IP Web Port</p>
+<h1 id="support"><a class="header" href="#support">Support</a></h1>
+<h2 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h2>
+<ul>
+<li>Check network connectivity - web port is forwarded.</li>
+<li>Check Heitel client works on CCS</li>
+</ul>
+<h2 id="example-nvr-configuration"><a class="header" href="#example-nvr-configuration">Example NVR Configuration</a></h2>
+<p>In this example, we're using the Cam Control Server for Playback and
+PTZ. Live video is achieved from the Web port using HTTP requests.</p>
+<p><img src="screenshots/Heitel/image2.png" alt="" /></p>
+<ol>
+<li>IP Address -- This is the public IP address and NVR port of the
+camera</li>
+<li>Port -- This is the Web port of the camera</li>
+<li>Heitel Server -- This is the camera control server configured in
+Admin -&gt; Lookups</li>
+<li>Device Serial ID -- This is the private IP address of the camera
+obtained from the CCS</li>
+</ol>
+<p>Ensure the NVR and Web ports use the same public IP address, otherwise
+only Live or Playback will work, depending on the IP address used.</p>
+<p>StreamSurfaceCustomOptions -- Set to 1</p>
+<p>HeitelHttpPTZ -- Set to False</p>
+<h1 id="appendix"><a class="header" href="#appendix">Appendix</a></h1>
+<p>Example CAMCTRL.ini (From Rhondda)</p>
+<p>[PORTA]</p>
+<p>Port=COM1</p>
+<p>Baud=115200</p>
+<p>Modeminit=ATE1V1S0=0</p>
+<p>Wahlprefix_1=ATD</p>
+<p>Wahlprefix_2=</p>
+<p>LLINE=-1</p>
+<p>PNAME=PORT A</p>
+<p>LRECORD=0</p>
+<p>MAXONLINETIME=-1</p>
+<p>TYPE=NIGA</p>
+<p>A_ALARMS=1</p>
+<p>A_REMOTE=1</p>
+<p>A_AUTOREMOTE=1</p>
+<p>A_AUTOALARMENABLE=1</p>
+<p>TCPIP=1</p>
+<p>CAPI=0</p>
+<p>MSN=</p>
+<p>[PORTB]</p>
+<p>Port=COM2</p>
+<p>Baud=115200</p>
+<p>Modeminit=ATE1V1S0=0</p>
+<p>Wahlprefix_1=ATD</p>
+<p>Wahlprefix_2=</p>
+<p>LLINE=-1</p>
+<p>PNAME=PORT B</p>
+<p>LRECORD=0</p>
+<p>MAXONLINETIME=-1</p>
+<p>TYPE=NIGA</p>
+<p>A_ALARMS=1</p>
+<p>A_REMOTE=1</p>
+<p>A_AUTOREMOTE=1</p>
+<p>A_AUTOALARMENABLE=1</p>
+<p>TCPIP=1</p>
+<p>CAPI=0</p>
+<p>MSN=</p>
+<p>[PORTC]</p>
+<p>Port=COM3</p>
+<p>Baud=115200</p>
+<p>Modeminit=ATE1V1S0=0</p>
+<p>Wahlprefix_1=ATD</p>
+<p>Wahlprefix_2=</p>
+<p>LLINE=-1</p>
+<p>PNAME=PORT C</p>
+<p>LRECORD=0</p>
+<p>MAXONLINETIME=-1</p>
+<p>TYPE=NIGA</p>
+<p>A_ALARMS=1</p>
+<p>A_REMOTE=1</p>
+<p>A_AUTOREMOTE=1</p>
+<p>A_AUTOALARMENABLE=1</p>
+<p>TCPIP=1</p>
+<p>CAPI=0</p>
+<p>MSN=</p>
+<p>[PORTD]</p>
+<p>Port=COM4</p>
+<p>Baud=115200</p>
+<p>Modeminit=ATE1V1S0=0</p>
+<p>Wahlprefix_1=ATD</p>
+<p>Wahlprefix_2=</p>
+<p>LLINE=-1</p>
+<p>PNAME=PORT D</p>
+<p>LRECORD=0</p>
+<p>MAXONLINETIME=-1</p>
+<p>TYPE=NIGA</p>
+<p>A_ALARMS=1</p>
+<p>A_REMOTE=1</p>
+<p>A_AUTOREMOTE=1</p>
+<p>A_AUTOALARMENABLE=1</p>
+<p>TCPIP=1</p>
+<p>CAPI=0</p>
+<p>MSN=</p>
+<p>[PORT5]</p>
+<p>Port=COM5</p>
+<p>Baud=115200</p>
+<p>Modeminit=ATE1V1S0=0</p>
+<p>Wahlprefix_1=ATD</p>
+<p>Wahlprefix_2=</p>
+<p>LLINE=0</p>
+<p>PNAME=PORT 5</p>
+<p>LRECORD=0</p>
+<p>MAXONLINETIME=-1</p>
+<p>TYPE=NIGA</p>
+<p>A_ALARMS=1</p>
+<p>A_REMOTE=1</p>
+<p>A_AUTOREMOTE=1</p>
+<p>A_AUTOALARMENABLE=1</p>
+<p>TCPIP=1</p>
+<p>CAPI=0</p>
+<p>MSN=</p>
+<p>[PORT6]</p>
+<p>Port=COM6</p>
+<p>Baud=115200</p>
+<p>Modeminit=ATE1V1S0=0</p>
+<p>Wahlprefix_1=ATD</p>
+<p>Wahlprefix_2=</p>
+<p>LLINE=0</p>
+<p>PNAME=PORT 6</p>
+<p>LRECORD=0</p>
+<p>MAXONLINETIME=-1</p>
+<p>TYPE=NIGA</p>
+<p>A_ALARMS=1</p>
+<p>A_REMOTE=1</p>
+<p>A_AUTOREMOTE=1</p>
+<p>A_AUTOALARMENABLE=1</p>
+<p>TCPIP=1</p>
+<p>CAPI=0</p>
+<p>MSN=</p>
+<p>[PORT7]</p>
+<p>Port=COM7</p>
+<p>Baud=115200</p>
+<p>Modeminit=ATE1V1S0=0</p>
+<p>Wahlprefix_1=ATD</p>
+<p>Wahlprefix_2=</p>
+<p>LLINE=0</p>
+<p>PNAME=PORT 7</p>
+<p>LRECORD=0</p>
+<p>MAXONLINETIME=-1</p>
+<p>TYPE=NIGA</p>
+<p>A_ALARMS=1</p>
+<p>A_REMOTE=1</p>
+<p>A_AUTOREMOTE=1</p>
+<p>A_AUTOALARMENABLE=1</p>
+<p>TCPIP=1</p>
+<p>CAPI=0</p>
+<p>MSN=</p>
+<p>[PORT8]</p>
+<p>Port=COM8</p>
+<p>Baud=115200</p>
+<p>Modeminit=ATE1V1S0=0</p>
+<p>Wahlprefix_1=ATD</p>
+<p>Wahlprefix_2=</p>
+<p>LLINE=0</p>
+<p>PNAME=PORT 8</p>
+<p>LRECORD=0</p>
+<p>MAXONLINETIME=-1</p>
+<p>TYPE=NIGA</p>
+<p>A_ALARMS=1</p>
+<p>A_REMOTE=1</p>
+<p>A_AUTOREMOTE=1</p>
+<p>A_AUTOALARMENABLE=1</p>
+<p>TCPIP=1</p>
+<p>CAPI=0</p>
+<p>MSN=</p>
+<p>[PORT9]</p>
+<p>Port=COM9</p>
+<p>Baud=115200</p>
+<p>Modeminit=ATE1V1S0=0</p>
+<p>Wahlprefix_1=ATD</p>
+<p>Wahlprefix_2=</p>
+<p>LLINE=0</p>
+<p>PNAME=PORT 9</p>
+<p>LRECORD=0</p>
+<p>MAXONLINETIME=-1</p>
+<p>TYPE=NIGA</p>
+<p>A_ALARMS=1</p>
+<p>A_REMOTE=1</p>
+<p>A_AUTOREMOTE=1</p>
+<p>A_AUTOALARMENABLE=1</p>
+<p>TCPIP=1</p>
+<p>CAPI=0</p>
+<p>MSN=</p>
+<p>[ANRUFE]</p>
+<p>Anruf=1</p>
+<p>Kamera 1=0</p>
+<p>Kamera 2=0</p>
+<p>Kamera 3=0</p>
+<p>Kamera 4=0</p>
+<p>Kamera 5=0</p>
+<p>Kamera 6=0</p>
+<p>Kamera 7=0</p>
+<p>Kamera 8=0</p>
+<p>Kamera 9=0</p>
+<p>Kamera 10=0</p>
+<p>Dauer=0</p>
+<p>Alarm=1</p>
+<p>AUTODISCONNECT=0</p>
+<p>[ROUNDS]</p>
+<p>PORT=1</p>
+<p>WARN=0</p>
+<p>[ARCHIV]</p>
+<p>Aktiv=1</p>
+<p>PATH=C:\CCSERVER\ARCHIVE</p>
+<p>Size=3000</p>
+<p>AUDIOCCS_CL=0</p>
+<p>AUDIO_REC=0</p>
+<p>AUTODEL=1</p>
+<p>REC_DURATION=30</p>
+<p>[VIDEOSERVER]</p>
+<p>CONTROLPORT=5500</p>
+<p>FORWARDPORT=3050</p>
+<p>DISPLAYCONNECTEDFORWARDPORT=0</p>
+<p>FIMAGES=0</p>
+<p>VIDEOPORTON=1</p>
+<p>FIMAGEMODE=0</p>
+<p>HIDE=1</p>
+<p>SENDCTLRPORTNO=1</p>
+<p>AUDIOPORTON=1</p>
+<p>AUDIOPORT=5100</p>
+<p>CIASUPPORT=0</p>
+<p>CIAINDICATION=1</p>
+<p>SMIMAGEMODE=0</p>
+<p>SENDGPSDATAON=1</p>
+<p>DISCONNECTRWHENNOTFWD=1</p>
+<p>NUMOFCONN=10</p>
+<p>HTCONNECTSVRTUNNEL_ON=0</p>
+<p>EMSCCS=0</p>
+<p>[JPGARCHIVE]</p>
+<p>PATH=</p>
+<p>ENABLED=0</p>
+<p>MAXIMAGES=2500</p>
+<p>HTFORMAT=0</p>
+<p>[EXTRA]</p>
+<p>AUTODISCONNECT=1</p>
+<p>REFIMAGEWIDTH=-1</p>
+<p>REFIMAGEHEIGHT=-1</p>
+<p>REFIMAGETIME=3</p>
+<p>TIMEOUT_CA_10=10</p>
+<p>HTCONNECTSVR=OBSOLETE</p>
+<p>HTCONNECTSVRPORT=OBSOLETE</p>
+<p>HTCONNECTOWNPORT=4446</p>
+<p>HTCONNECTTARGETPORT=4445</p>
+<p>RESERVEDALARMPORTS=2</p>
+<p>USE_USB=0</p>
+<p>IMAGE_IMPROVEMENT=0</p>
+<p>REDFRAME=1</p>
+<p>LOGFILE=1</p>
+<p>AUDIOMICCHANNEL_ON=0</p>
+<p>AUDIOMICPORT=4450</p>
+<p>PREALARMVIEWER_ON=0</p>
+<p>[CBLOG]</p>
+<p>ENABLED=1</p>
+<p>[AUDIO]</p>
+<p>MODE=1</p>
+<p>SS8RC=0</p>
+<p>[PATHS]</p>
+<p>LOCAL=1</p>
+<p>REMOTEPATH=</p>
+<p>[ONLINESCR]</p>
+<p>MODE=N</p>
+<p>CAM0=1</p>
+<p>CAM1=1</p>
+<p>CAM2=2</p>
+<p>CAM3=3</p>
+<p>CAM4=4</p>
+<p>SMRES_128x80=87</p>
+<p>SMRES_256x128=51</p>
+<p>SMRES_512x256=100</p>
+<p>SMRES_720x288=100</p>
+<p>ZOOMWND=0</p>
+<p>[TCP_IP]</p>
+<p>PORT=3000</p>
+<p>[EXTSIOOP]</p>
+<p>ACTIV=0</p>
+<p>PORT=COM3</p>
+<p>BAUD=9600</p>
+<p>PARITY=N</p>
+<p>DATABITS=8</p>
+<p>STOPBITS=1</p>
+<p>[TIMESYNC]</p>
+<p>MODE=1</p>
+<p>[SCREEN]</p>
+<p>ALWAYSONTOP=0</p>
+<p>[HTCONNECTCTRL]</p>
+<p>HTCONNECTSVR=0</p>
+<p>HTCONNECTSERVERPORT=3333</p>
+<p>HTCONNECTSERVER_ADDRESS=127.0.0.1</p>
+<p>STATUSSERVER=0</p>
+<p>STATUSSERVERPORT=4444</p>
+<p>STATUSSERVERCMDTIMEOUT=0</p>
+<p>COMMANDMODE=0</p>
+<p>COMMANDINTERVAL=60</p>
+<p>CONNECTCMDPORT=4445</p>
+<p>DISCONNECTTIMEOUT=30</p>
+<p>HTCONNECTOWNPORT=4446</p>
+<p>[PORT10]</p>
+<p>Port=COM10</p>
+<p>Baud=115200</p>
+<p>Modeminit=ATE1V1S0=0</p>
+<p>Wahlprefix_1=ATD</p>
+<p>Wahlprefix_2=</p>
+<p>LLINE=-1</p>
+<p>PNAME=PORT 10</p>
+<p>LRECORD=0</p>
+<p>MAXONLINETIME=-1</p>
+<p>TYPE=NIGA</p>
+<p>TCPIP=1</p>
+<p>CAPI=0</p>
+<p>MSN=</p>
+<p>A_ALARMS=1</p>
+<p>A_REMOTE=1</p>
+<p>A_AUTOREMOTE=1</p>
+<p>A_AUTOALARMENABLE=1</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Integrations/Hanwha.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../Integrations/Hikvision Audio.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Integrations/Hanwha.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../Integrations/Hikvision Audio.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

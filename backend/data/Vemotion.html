@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Vemotion - Viewscape 11.37.1 Manual</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Introduction.html"><strong aria-hidden="true">1.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Integrations</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Integrations/Active Directory.html"><strong aria-hidden="true">2.1.</strong> Active Directory</a></li><li class="chapter-item expanded "><a href="../Integrations/Adpro.html"><strong aria-hidden="true">2.2.</strong> Adpro</a></li><li class="chapter-item expanded "><a href="../Integrations/AMAG.html"><strong aria-hidden="true">2.3.</strong> AMAG</a></li><li class="chapter-item expanded "><a href="../Integrations/Assa Abloy.html"><strong aria-hidden="true">2.4.</strong> Assa Abloy</a></li><li class="chapter-item expanded "><a href="../Integrations/Avigilon.html"><strong aria-hidden="true">2.5.</strong> Avigilon</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Camera Station.html"><strong aria-hidden="true">2.6.</strong> Axis Camera Station</a></li><li class="chapter-item expanded "><a href="../Integrations/AXIS IO.html"><strong aria-hidden="true">2.7.</strong> AXIS IO</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Virtual Camera.html"><strong aria-hidden="true">2.8.</strong> Axis Virtual Camera</a></li><li class="chapter-item expanded "><a href="../Integrations/Bosch Analytics Motion.html"><strong aria-hidden="true">2.9.</strong> Bosch Analytics Motion</a></li><li class="chapter-item expanded "><a href="../Integrations/BVMS.html"><strong aria-hidden="true">2.10.</strong> Bosch BVMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore Footage Nuke.html"><strong aria-hidden="true">2.11.</strong> Coldstore Footage Nuke</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore NVR.html"><strong aria-hidden="true">2.12.</strong> Coldstore NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Commend.html"><strong aria-hidden="true">2.13.</strong> Commend</a></li><li class="chapter-item expanded "><a href="../Integrations/Conxtd.html"><strong aria-hidden="true">2.14.</strong> Conxtd</a></li><li class="chapter-item expanded "><a href="../Integrations/CSL Dualcom.html"><strong aria-hidden="true">2.15.</strong> CSL Dualcom</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics ANPR.html"><strong aria-hidden="true">2.16.</strong> Daktronics ANPR</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics.html"><strong aria-hidden="true">2.17.</strong> Daktronics</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros Alarms.html"><strong aria-hidden="true">2.18.</strong> Dedicated Micros Alarms</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros V9.html"><strong aria-hidden="true">2.19.</strong> Dedicated Micros V9</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec User.html"><strong aria-hidden="true">2.20.</strong> Entrotec User</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec.html"><strong aria-hidden="true">2.21.</strong> Entrotec</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun Requirements.html"><strong aria-hidden="true">2.22.</strong> EverRun Requirements</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun.html"><strong aria-hidden="true">2.23.</strong> EverRun</a></li><li class="chapter-item expanded "><a href="../Integrations/Failover Solutions.html"><strong aria-hidden="true">2.24.</strong> Failover Solutions</a></li><li class="chapter-item expanded "><a href="../Integrations/GDPR Manual.html"><strong aria-hidden="true">2.25.</strong> GDPR Manual</a></li><li class="chapter-item expanded "><a href="../Integrations/Guard Tour.html"><strong aria-hidden="true">2.26.</strong> Guard Tour</a></li><li class="chapter-item expanded "><a href="../Integrations/Hanwha.html"><strong aria-hidden="true">2.27.</strong> Hanwha</a></li><li class="chapter-item expanded "><a href="../Integrations/Heitel.html"><strong aria-hidden="true">2.28.</strong> Heitel</a></li><li class="chapter-item expanded "><a href="../Integrations/Hikvision Audio.html"><strong aria-hidden="true">2.29.</strong> Hikvision Audio</a></li><li class="chapter-item expanded "><a href="../Integrations/Honeywell Morley.html"><strong aria-hidden="true">2.30.</strong> Honeywell Morley</a></li><li class="chapter-item expanded "><a href="../Integrations/Integrations.html"><strong aria-hidden="true">2.31.</strong> Integrations</a></li><li class="chapter-item expanded "><a href="../Integrations/Milestone.html"><strong aria-hidden="true">2.32.</strong> Milestone</a></li><li class="chapter-item expanded "><a href="../Integrations/North BT.html"><strong aria-hidden="true">2.33.</strong> North BT</a></li><li class="chapter-item expanded "><a href="../Integrations/nx-witness.html"><strong aria-hidden="true">2.34.</strong> NX Witness</a></li><li class="chapter-item expanded "><a href="../Integrations/Panasonic.html"><strong aria-hidden="true">2.35.</strong> Panasonic</a></li><li class="chapter-item expanded "><a href="../Integrations/Paxton V9 Migration.html"><strong aria-hidden="true">2.36.</strong> Paxton V9 Migration</a></li><li class="chapter-item expanded "><a href="../Integrations/Pelco Endura.html"><strong aria-hidden="true">2.37.</strong> Pelco Endura</a></li><li class="chapter-item expanded "><a href="../Integrations/RTSP.html"><strong aria-hidden="true">2.38.</strong> RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Samsung RTSP.html"><strong aria-hidden="true">2.39.</strong> Samsung RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Scantronics.html"><strong aria-hidden="true">2.40.</strong> Scantronics</a></li><li class="chapter-item expanded "><a href="../Integrations/SIP.html"><strong aria-hidden="true">2.41.</strong> SIP</a></li><li class="chapter-item expanded "><a href="../Integrations/SNMP.html"><strong aria-hidden="true">2.42.</strong> SNMP</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon Audio NVR.html"><strong aria-hidden="true">2.43.</strong> Stentofon Audio NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon.html"><strong aria-hidden="true">2.44.</strong> Stentofon</a></li><li class="chapter-item expanded "><a href="../Integrations/TDS.html"><strong aria-hidden="true">2.45.</strong> TDS</a></li><li class="chapter-item expanded "><a href="../Integrations/TDSi.html"><strong aria-hidden="true">2.46.</strong> TDSi</a></li><li class="chapter-item expanded "><a href="../Integrations/Texecom.html"><strong aria-hidden="true">2.47.</strong> Texecom</a></li><li class="chapter-item expanded "><a href="../Integrations/UNV.html"><strong aria-hidden="true">2.48.</strong> UNV</a></li><li class="chapter-item expanded "><a href="../Integrations/Vehant ITMS.html"><strong aria-hidden="true">2.49.</strong> Vehant ITMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Vemotion.html" class="active"><strong aria-hidden="true">2.50.</strong> Vemotion</a></li><li class="chapter-item expanded "><a href="../Integrations/Videonetics.html"><strong aria-hidden="true">2.51.</strong> Videonetics</a></li><li class="chapter-item expanded "><a href="../Integrations/ViewCast.html"><strong aria-hidden="true">2.52.</strong> ViewCast</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Keyboard.html"><strong aria-hidden="true">2.53.</strong> Viewscape Keyboard</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Motion Dection.html"><strong aria-hidden="true">2.54.</strong> Viewscape Motion Dection</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Viewscape Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Viewscape Systems/Desktop.html"><strong aria-hidden="true">3.1.</strong> Desktop</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Export Manager.html"><strong aria-hidden="true">3.2.</strong> Export Manager</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Controls.html"><strong aria-hidden="true">3.3.</strong> Pro Controls</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Server.html"><strong aria-hidden="true">3.4.</strong> Pro Server</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Surface.html"><strong aria-hidden="true">3.5.</strong> Surface</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape Systems.html"><strong aria-hidden="true">3.6.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape-Systems.html"><strong aria-hidden="true">3.7.</strong> Viewscape-Systems</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Viewscape 11.37.1 Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="vemotion"><a class="header" href="#vemotion">Vemotion</a></h1>
+<p>Version 1.0</p>
+<h1 id="contents"><a class="header" href="#contents">Contents</a></h1>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#functionality">Functionality</a></li>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#viewscape-configuration">Viewscape Configuration</a></li>
+<li><a href="#updating-the-licence">Updating the Licence</a></li>
+<li><a href="#camera-configuration">Camera Configuration</a></li>
+<li><a href="#support">Support</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#appendix">Appendix</a></li>
+</ul>
+<h1 id="overview"><a class="header" href="#overview">Overview</a></h1>
+<p>This manual contains the required information and steps taken to
+integrate a Vemotion Streaming Server with Viewscape.</p>
+<p>&quot;The Vemotion Streaming Server (VSS) is the hub of the Vemotion solution
+and connects
+the <a href="http://www.vemotion.com/products/encoders/">Encoders</a> and <a href="http://www.vemotion.com/products/remote-client-viewers/">Viewers</a> to
+the Network Operations Centre (NOC)&quot;. The VSS is a software application
+used to integrate cameras and encoders to an unlimited number of
+licensed viewers. The VSS must have internet access to retrieve the
+wireless video from the cameras and encoders, and 3G and 4G connections
+are widely used. The VSS is licensed to allow a specific number of
+remote encoders.</p>
+<p>The VSS also authenticates users that connect to it and as such are
+listed within the software when connections are established and
+maintained. Because of this, a new user is required for the integration
+with Viewscape.</p>
+<h2 id="functionality"><a class="header" href="#functionality">Functionality</a></h2>
+<ul>
+<li>VSS Allows for streaming of wireless cameras and therefore doesn't
+support video playback</li>
+</ul>
+<h2 id="pre-requisites"><a class="header" href="#pre-requisites">Pre-requisites</a></h2>
+<ul>
+<li>Microsoft Visual C++ 2008 Redistributable</li>
+<li>Vemotion SDK</li>
+</ul>
+<h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
+<p>The VSS is installed on a Windows based server and network connectivity
+should be checked prior to configuration with VTAS, as well as ensuring
+a user is created for Viewscape.</p>
+<p>Before taking any steps listed in this manual, verify the Vemotion
+integration is not already installed by checking the existence of the
+Vemotion 'Pro Camera Type' from the information menu and then select
+'Camera'.</p>
+<p>The installation of the Vemotion SDK is to be installed on all VTAS
+clients which have the requirement of streaming video from the VSS and
+is not required on the VTAS Server.</p>
+<p>The Vemotion installation comprises of the following steps;</p>
+<ol>
+<li>Install Vemotion SDK</li>
+<li>Update Viewscape License</li>
+<li>Update Viewscape Server Config file with Vemotion license key</li>
+<li>Update the configuration file of <code>VTAS Pro.exe</code> or <code>StreamSurface.exe</code></li>
+<li>Configure cameras in Viewscape</li>
+</ol>
+<p>The details of each step can be found in the relative sections below.</p>
+<h2 id="software"><a class="header" href="#software">Software</a></h2>
+<p>The required software for Vemotion are simple wizards for Microsoft
+Visual C++ 2008 redistributable if not already installed, and the
+current version of Vemotion SDK. There are no further details required
+for these installations.</p>
+<h2 id="viewscape-configuration"><a class="header" href="#viewscape-configuration">Viewscape Configuration</a></h2>
+<h3 id="updating-the-licence"><a class="header" href="#updating-the-licence">Updating the Licence</a></h3>
+<p>Update the current license key from 'Help' -&gt; 'About VTAS' (Provide
+developer with current key and obtain the new key)</p>
+<p>To enable the PTZ functions to work:</p>
+<ul>
+<li>edit the Server Config located in:
+<code>C:\\Program Files (x86)\\i-comply\\VTAS Pro Server\\VTASProServer.exe.config</code></li>
+<li>Find the setting <code>VemotionServerLicence</code></li>
+<li>Within the value tags, enter the PTZ licence key obtained from Vemotion
+<ul>
+<li>for example: <code>icomplyptzlicence</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="camera-configuration"><a class="header" href="#camera-configuration">Camera Configuration</a></h3>
+<p>To view live video from the Vemotion cameras on the clients, the
+configuration file needs changing for VTAS Pro or the SurfaceController,
+depending on which is being used. The value is calculated to allow for
+the different interfaces each site has and therefore is likely to differ
+per site. The value for Vemotion only is '268435456', if you don't know
+the value required for more interfaces as well as the Vemotion please
+contact the author of this document.</p>
+<p>For VTAS Pro, the configuration file is located in:
+```c:\Program Files (x86)\i-Comply\VTAS Pro\VTASPro.exe.config``
+Locate the setting <code>Streamviewer</code> and change the value to <code>268435456</code>.</p>
+<p>For the SurfaceController, the configuration file is located in:
+<code>c:\\Program Files (x86)\\i-Comply\\StreamSurface\\StreamSurface.exe.config</code>
+Locate the setting <code>RestrictionsLive</code> and change the value to <code>268435456</code>.</p>
+<p>Ensure a user account is configured on the Vemotion Streaming Server
+software and create this in VTAS by going to <code>Admin -&gt; Lookups</code>, then
+select <code>Pro Camera -- Stream Authentication</code>.</p>
+<p>Configure the cameras from the Camera menu located in <code>Information -&gt; Camera</code>. Select the <code>Pro Camera Type</code> as <code>Vemotion</code>. Set the <code>Pro Index</code> as the unique camera number and <code>aspect ratio</code> as required. Enter the IP address and port number of the <code>Vemotion Server</code> in the relative field, for example <code>10.10.10.225:4444</code> (4444 being the default). 
+Thenset the <code>Stream Name</code> as the name of the camera on the Vemotion server. Select the authentication in the <code>Vemotion Stream Authentication</code> field which was created earlier.</p>
+<h1 id="support"><a class="header" href="#support">Support</a></h1>
+<h2 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h2>
+<p>Common issues and steps be taken are;</p>
+<ol>
+<li>If there is no option for Vemotion in the camera type, restart VTAS
+and verify the licence key entered is correct</li>
+<li>If the video won't display and reports it can't connect with the
+camera, check network connectivity to the VSS / camera
+authentication / camera stream name / video exists in Vemotion
+software</li>
+<li>If no PTZ is available, check the logs on the server to see if
+telemetry is being sent out, if not check the camera configuration
+and PTZ licence in the server config. If the server is sending the
+required telemetry, contact Vemotion</li>
+</ol>
+<h2 id="debugging"><a class="header" href="#debugging">Debugging</a></h2>
+<p>When moving the camera in VTAS, logs should be generated on the server
+which include connections to the VSS (10.10.1.225:444) in the example
+below, followed by a series of hexadecimal values being sent to the
+camera.</p>
+<pre><code>(0023) 2015/03/24 16:28:57:233 VemotionPTZ #23# [VemotionPTZ]
+[10.10.1.225:4444] Connecting to server 10.10.1.225:4444
+
+(0023) 2015/03/24 16:28:57:233 VemotionPTZ #23# [VemotionPTZ]
+[10.10.1.225:4444] Connected to server
+
+(0023) 2015/03/24 16:28:57:233 VemotionPTZ #23# [VemotionPTZ]
+[10.10.1.225:4444] Waiting for messages from 10.10.1.225:4444
+
+(0023) 2015/03/24 16:28:57:234 VemotionPTZ #23# [VemotionPTZ]
+[10.10.1.225:4444] &gt;&gt;
+[00,00,00,2A,0B,00,00,00,07,49,63,6F,6D,70,6C,79,00,00,00,05,6D,30,30,73,65,00,00,00,11,69,63,6F,6D,70,6C,79,70,74,7A,6C,69,63,65,6E,63,65]
+
+(0023) 2015/03/24 16:28:57:234 VemotionPTZ #23# [VemotionPTZ]
+[10.10.1.225:4444] Message sent
+
+(0023) 2015/03/24 16:28:57:234 VemotionPTZ #23# [VemotionPTZ]
+[10.10.1.225:4444] &gt;&gt; [00,00,00,02,64,03]
+
+(0023) 2015/03/24 16:28:57:234 VemotionPTZ #23# [VemotionPTZ]
+[10.10.1.225:4444] Message sent
+</code></pre>
+<h1 id="appendix"><a class="header" href="#appendix">Appendix</a></h1>
+<ul>
+<li>'vemotion_player_sdk_setup_3_0_0.zip' should be contained within
+the same directory as this manual</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Integrations/Vehant ITMS.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../Integrations/Videonetics.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Integrations/Vehant ITMS.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../Integrations/Videonetics.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

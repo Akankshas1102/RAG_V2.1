@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>EverRun - Viewscape 11.37.1 Manual</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Introduction.html"><strong aria-hidden="true">1.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Integrations</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Integrations/Active Directory.html"><strong aria-hidden="true">2.1.</strong> Active Directory</a></li><li class="chapter-item expanded "><a href="../Integrations/Adpro.html"><strong aria-hidden="true">2.2.</strong> Adpro</a></li><li class="chapter-item expanded "><a href="../Integrations/AMAG.html"><strong aria-hidden="true">2.3.</strong> AMAG</a></li><li class="chapter-item expanded "><a href="../Integrations/Assa Abloy.html"><strong aria-hidden="true">2.4.</strong> Assa Abloy</a></li><li class="chapter-item expanded "><a href="../Integrations/Avigilon.html"><strong aria-hidden="true">2.5.</strong> Avigilon</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Camera Station.html"><strong aria-hidden="true">2.6.</strong> Axis Camera Station</a></li><li class="chapter-item expanded "><a href="../Integrations/AXIS IO.html"><strong aria-hidden="true">2.7.</strong> AXIS IO</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Virtual Camera.html"><strong aria-hidden="true">2.8.</strong> Axis Virtual Camera</a></li><li class="chapter-item expanded "><a href="../Integrations/Bosch Analytics Motion.html"><strong aria-hidden="true">2.9.</strong> Bosch Analytics Motion</a></li><li class="chapter-item expanded "><a href="../Integrations/BVMS.html"><strong aria-hidden="true">2.10.</strong> Bosch BVMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore Footage Nuke.html"><strong aria-hidden="true">2.11.</strong> Coldstore Footage Nuke</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore NVR.html"><strong aria-hidden="true">2.12.</strong> Coldstore NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Commend.html"><strong aria-hidden="true">2.13.</strong> Commend</a></li><li class="chapter-item expanded "><a href="../Integrations/Conxtd.html"><strong aria-hidden="true">2.14.</strong> Conxtd</a></li><li class="chapter-item expanded "><a href="../Integrations/CSL Dualcom.html"><strong aria-hidden="true">2.15.</strong> CSL Dualcom</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics ANPR.html"><strong aria-hidden="true">2.16.</strong> Daktronics ANPR</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics.html"><strong aria-hidden="true">2.17.</strong> Daktronics</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros Alarms.html"><strong aria-hidden="true">2.18.</strong> Dedicated Micros Alarms</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros V9.html"><strong aria-hidden="true">2.19.</strong> Dedicated Micros V9</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec User.html"><strong aria-hidden="true">2.20.</strong> Entrotec User</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec.html"><strong aria-hidden="true">2.21.</strong> Entrotec</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun Requirements.html"><strong aria-hidden="true">2.22.</strong> EverRun Requirements</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun.html" class="active"><strong aria-hidden="true">2.23.</strong> EverRun</a></li><li class="chapter-item expanded "><a href="../Integrations/Failover Solutions.html"><strong aria-hidden="true">2.24.</strong> Failover Solutions</a></li><li class="chapter-item expanded "><a href="../Integrations/GDPR Manual.html"><strong aria-hidden="true">2.25.</strong> GDPR Manual</a></li><li class="chapter-item expanded "><a href="../Integrations/Guard Tour.html"><strong aria-hidden="true">2.26.</strong> Guard Tour</a></li><li class="chapter-item expanded "><a href="../Integrations/Hanwha.html"><strong aria-hidden="true">2.27.</strong> Hanwha</a></li><li class="chapter-item expanded "><a href="../Integrations/Heitel.html"><strong aria-hidden="true">2.28.</strong> Heitel</a></li><li class="chapter-item expanded "><a href="../Integrations/Hikvision Audio.html"><strong aria-hidden="true">2.29.</strong> Hikvision Audio</a></li><li class="chapter-item expanded "><a href="../Integrations/Honeywell Morley.html"><strong aria-hidden="true">2.30.</strong> Honeywell Morley</a></li><li class="chapter-item expanded "><a href="../Integrations/Integrations.html"><strong aria-hidden="true">2.31.</strong> Integrations</a></li><li class="chapter-item expanded "><a href="../Integrations/Milestone.html"><strong aria-hidden="true">2.32.</strong> Milestone</a></li><li class="chapter-item expanded "><a href="../Integrations/North BT.html"><strong aria-hidden="true">2.33.</strong> North BT</a></li><li class="chapter-item expanded "><a href="../Integrations/nx-witness.html"><strong aria-hidden="true">2.34.</strong> NX Witness</a></li><li class="chapter-item expanded "><a href="../Integrations/Panasonic.html"><strong aria-hidden="true">2.35.</strong> Panasonic</a></li><li class="chapter-item expanded "><a href="../Integrations/Paxton V9 Migration.html"><strong aria-hidden="true">2.36.</strong> Paxton V9 Migration</a></li><li class="chapter-item expanded "><a href="../Integrations/Pelco Endura.html"><strong aria-hidden="true">2.37.</strong> Pelco Endura</a></li><li class="chapter-item expanded "><a href="../Integrations/RTSP.html"><strong aria-hidden="true">2.38.</strong> RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Samsung RTSP.html"><strong aria-hidden="true">2.39.</strong> Samsung RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Scantronics.html"><strong aria-hidden="true">2.40.</strong> Scantronics</a></li><li class="chapter-item expanded "><a href="../Integrations/SIP.html"><strong aria-hidden="true">2.41.</strong> SIP</a></li><li class="chapter-item expanded "><a href="../Integrations/SNMP.html"><strong aria-hidden="true">2.42.</strong> SNMP</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon Audio NVR.html"><strong aria-hidden="true">2.43.</strong> Stentofon Audio NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon.html"><strong aria-hidden="true">2.44.</strong> Stentofon</a></li><li class="chapter-item expanded "><a href="../Integrations/TDS.html"><strong aria-hidden="true">2.45.</strong> TDS</a></li><li class="chapter-item expanded "><a href="../Integrations/TDSi.html"><strong aria-hidden="true">2.46.</strong> TDSi</a></li><li class="chapter-item expanded "><a href="../Integrations/Texecom.html"><strong aria-hidden="true">2.47.</strong> Texecom</a></li><li class="chapter-item expanded "><a href="../Integrations/UNV.html"><strong aria-hidden="true">2.48.</strong> UNV</a></li><li class="chapter-item expanded "><a href="../Integrations/Vehant ITMS.html"><strong aria-hidden="true">2.49.</strong> Vehant ITMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Vemotion.html"><strong aria-hidden="true">2.50.</strong> Vemotion</a></li><li class="chapter-item expanded "><a href="../Integrations/Videonetics.html"><strong aria-hidden="true">2.51.</strong> Videonetics</a></li><li class="chapter-item expanded "><a href="../Integrations/ViewCast.html"><strong aria-hidden="true">2.52.</strong> ViewCast</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Keyboard.html"><strong aria-hidden="true">2.53.</strong> Viewscape Keyboard</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Motion Dection.html"><strong aria-hidden="true">2.54.</strong> Viewscape Motion Dection</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Viewscape Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Viewscape Systems/Desktop.html"><strong aria-hidden="true">3.1.</strong> Desktop</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Export Manager.html"><strong aria-hidden="true">3.2.</strong> Export Manager</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Controls.html"><strong aria-hidden="true">3.3.</strong> Pro Controls</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Server.html"><strong aria-hidden="true">3.4.</strong> Pro Server</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Surface.html"><strong aria-hidden="true">3.5.</strong> Surface</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape Systems.html"><strong aria-hidden="true">3.6.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape-Systems.html"><strong aria-hidden="true">3.7.</strong> Viewscape-Systems</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Viewscape 11.37.1 Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="everrun"><a class="header" href="#everrun">EverRun</a></h1>
+<h1 id="installing-the-everrun-software"><a class="header" href="#installing-the-everrun-software">Installing the everRun Software</a></h1>
+<p>Allow 60 to 90 minutes to complete the everRun software installation
+process.</p>
+<h2 id="1--install-the-everrun-software-on-the-first-pm"><a class="header" href="#1--install-the-everrun-software-on-the-first-pm">1.  Install the everRun software on the first PM:</a></h2>
+<ul>
+<li>Power on the first PM, and then insert the bootable medium or mount the ISO image.</li>
+<li>As the PM powers on, configure the following settings in the firmware (BIOS or UEFI) setup utility:
+<ul>
+<li>Set the first boot device to the Optical Drive.</li>
+<li>Enable Virtualization Technology.</li>
+<li>Enable Execute-Disable Bit Capability.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note</strong>: If you need to configure your keyboard for a different layout, see <a href="https://everrundoc.stratus.com/7.4.3.2/en-us/Content/Help/P01_Users/C02_GetStart/S03_InstallEES/T_MapKeybd.htm">Mapping Your Keyboard</a>.</p>
+</blockquote>
+<ul>
+<li>From the installation software's Welcome screen, use the arrow keys to select an installation option. Stratus recommends that, for an initial installation, you select <strong>Verify medium and Install everRun</strong>, which verifies the installation medium before installing the software (verification adds about five minutes to the installation process). If you do not want to verify the medium, select <strong>Install everRun, Create a new system</strong>. After you select an option, press <strong>Enter</strong>.</li>
+<li>If any disk contains previously installed data, the following message appears and the system reboots (if no disk contains previously installed data, installation continues with the next step):</li>
+</ul>
+<blockquote>
+<p>Rebooting because disks* XXX* were erased.</p>
+<p>When the reboot is complete, the boot menu reappears and you must,
+again, select an installation option (Step 1,c, above).</p>
+</blockquote>
+<ul>
+<li>From the <strong>Select interface for private Physical Machine connection</strong> screen, select an embedded port (for example, <strong>em1</strong>, which is the default), and press <strong>F12.</strong></li>
+<li>From the <strong>Select interface for managing the system (ibiz0)</strong> screen, select an embedded port (for example, <strong>em2</strong>, which is the default), and press <strong>F12.</strong></li>
+<li>From the <strong>Select the method to configure ibiz0</strong> screen, select <strong>Manual configuration (Static Address)</strong> and press <strong>F12</strong>.</li>
+</ul>
+<blockquote>
+<p><strong>Note</strong>: To perform a dynamic IP configuration, select** Automatic
+configuration via DHCP** instead and skip to <strong>Step 1h</strong>, where you
+will need to write down the IPv4 address as described in <a href="https://everrundoc.stratus.com/7.4.3.2/en-us/Content/Help/P01_Users/C02_GetStart/S03_InstallEES/T_RecNode0IPAdd.htm">Recording the Management IP Address</a></p>
+</blockquote>
+<ul>
+<li>From the <strong>Configure em2</strong> screen, enter the IPv4 address, netmask, default gateway address, and DNS address values that you received from your network administrator, and then press <strong>F12</strong>.</li>
+<li>No action from you is necessary until after the PM reboots. At that time, remove the bootable medium or unmount the ISO image, connect the keyboard/console to the second PM, and go to <strong>Step 2</strong>.</li>
+</ul>
+<h2 id="2--install-the-everrun-software-on-the-second-pm"><a class="header" href="#2--install-the-everrun-software-on-the-second-pm">2.  Install the everRun software on the second PM:</a></h2>
+<ul>
+<li>Power on the second PM, and then insert the bootable medium or mount the ISO image.</li>
+<li>As the PM powers on, configure the settings in the firmware (BIOS or UEFI) setup utility described in <strong>Step 1b</strong>.</li>
+<li>From the installation software's Welcome screen, use the arrow keys to select <strong>Replace PM, Join system: Initialize data</strong>, and press <strong>Enter</strong>.</li>
+<li>If any disk contains previously installed data, the following message appears and the system reboots (if no disk contains previously installed data, installation continues with the next step):</li>
+</ul>
+<blockquote>
+<p>Rebooting because disks* XXX* were erased.</p>
+<p>When the reboot is complete, the boot menu reappears and you must
+continue with Step 2,c, above.</p>
+</blockquote>
+<ul>
+<li>Perform <strong>Steps 1e</strong> through <strong>1h</strong>.</li>
+<li>No action from you is necessary until after the second PM reboots. At that time, remove the bootable medium or unmount the ISO image, disconnect the keyboard/console, and log on to the everRun Availability Console.</li>
+</ul>
+<h1 id="logging-on-to-the-everrun-availability-console"><a class="header" href="#logging-on-to-the-everrun-availability-console">Logging On to the everRun Availability Console</a></h1>
+<ol>
+<li>From the remote management computer, type the IP address of node0 (primary) into a browser address bar.</li>
+<li>The logon page of the everRun Availability Console appears. Enter <strong>admin</strong> for the <strong>Username</strong> and <strong>admin</strong> for <strong>Password</strong>, and then click <strong>LOGIN</strong>.</li>
+<li>The Stratus everRun EULA appears. Read the EULA and click <strong>Accept</strong> to accept it.</li>
+<li>The <strong>INITIAL CONFIGURATION</strong> page appears. Under <strong>NOTIFICATIONS</strong>, the box for <strong>Enable Support Notifications</strong> is checked, by default. If you do not want the everRun system to send health and status notifications to your authorized Stratus service representative, uncheck the box. You can change this setting later (see <a href="https://everrundoc.stratus.com/7.4.3.2/en-us/Content/Help/P01_Users/C03_UseEEMC/S04_PrefsPage/T_ConfigRemote.htm">Configuring Remote Support Settings</a>).</li>
+<li>Under <strong>SYSTEM IP</strong>, for IP Address, enter the address you obtained from your network administrator. After you have entered the network information, click <strong>Continue</strong>.</li>
+<li>The **Portal Restart Required **window appears. After waiting a minute (as indicated in the window), click **OK **to refresh the console and to continue.</li>
+<li>The <strong>LICENSE INFORMATION</strong> window appears. Under <strong>Upload LicenseKey</strong>, click <strong>Browse</strong> and navigate to the license <strong>.KEY</strong> file that you received from Stratus. Select the license file and click <strong>Upload</strong>.</li>
+</ol>
+<blockquote>
+<p>For security, change the default user login name and password for
+the <strong>admin</strong> account on the <strong>Users &amp; Groups</strong> page.</p>
+</blockquote>
+<p>The everRun Availability Console appears. Bookmark or make note of the system IP address for use when logging in to the console in the future.</p>
+<h1 id="creating-a-protected-virtual-machine"><a class="header" href="#creating-a-protected-virtual-machine">Creating a Protected Virtual Machine</a></h1>
+<p>First, create a virtual CD (VCD) to make software installation media available to the virtual machine (VM).</p>
+<ol>
+<li>Open the <strong>Virtual CDs</strong> page in the everRun Availability Console</li>
+<li>Click <strong>Create VCD</strong> to open the <strong>Virtual CD Creation Wizard</strong>.</li>
+<li>Follow creation wizard prompts. For details, see <a href="https://everrundoc.stratus.com/7.4.3.2/en-us/Content/Help/P01_Users/C08_MngVMs/S07_MngVirtualCD/T_CreateVCD.htm">Creating a Virtual CD</a> in the online help.</li>
+</ol>
+<p>Next, create a new virtual machine (VM) and install a guest operating
+system on your everRun system.</p>
+<ol>
+<li>On the <strong>Virtual Machines</strong> page, click <strong>Create</strong> to open the <strong>VM Creation Wizard</strong>.</li>
+<li>Follow the creation wizard prompts. For details, see <a href="https://everrundoc.stratus.com/7.4.3.2/en-us/Content/Help/P01_Users/C08_MngVMs/S02_CreateMigrateVM/T_CreateNewVM.htm">Creating a New Virtual Machine</a> in the online help.</li>
+</ol>
+<p>After you install the operating system, perform any other guest OS configuration tasks (for example, initializing disks and installing applications). For details, see <a href="https://everrundoc.stratus.com/7.4.3.2/en-us/Content/Help/P01_Users/C02_GetStart/S04_PostInstall/N_PostInstallTask.htm">Post-Installation Tasks</a> in the online help.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Integrations/EverRun Requirements.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../Integrations/Failover Solutions.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Integrations/EverRun Requirements.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../Integrations/Failover Solutions.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Coldstore NVR - Viewscape 11.37.1 Manual</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Introduction.html"><strong aria-hidden="true">1.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Integrations</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Integrations/Active Directory.html"><strong aria-hidden="true">2.1.</strong> Active Directory</a></li><li class="chapter-item expanded "><a href="../Integrations/Adpro.html"><strong aria-hidden="true">2.2.</strong> Adpro</a></li><li class="chapter-item expanded "><a href="../Integrations/AMAG.html"><strong aria-hidden="true">2.3.</strong> AMAG</a></li><li class="chapter-item expanded "><a href="../Integrations/Assa Abloy.html"><strong aria-hidden="true">2.4.</strong> Assa Abloy</a></li><li class="chapter-item expanded "><a href="../Integrations/Avigilon.html"><strong aria-hidden="true">2.5.</strong> Avigilon</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Camera Station.html"><strong aria-hidden="true">2.6.</strong> Axis Camera Station</a></li><li class="chapter-item expanded "><a href="../Integrations/AXIS IO.html"><strong aria-hidden="true">2.7.</strong> AXIS IO</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Virtual Camera.html"><strong aria-hidden="true">2.8.</strong> Axis Virtual Camera</a></li><li class="chapter-item expanded "><a href="../Integrations/Bosch Analytics Motion.html"><strong aria-hidden="true">2.9.</strong> Bosch Analytics Motion</a></li><li class="chapter-item expanded "><a href="../Integrations/BVMS.html"><strong aria-hidden="true">2.10.</strong> Bosch BVMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore Footage Nuke.html"><strong aria-hidden="true">2.11.</strong> Coldstore Footage Nuke</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore NVR.html" class="active"><strong aria-hidden="true">2.12.</strong> Coldstore NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Commend.html"><strong aria-hidden="true">2.13.</strong> Commend</a></li><li class="chapter-item expanded "><a href="../Integrations/Conxtd.html"><strong aria-hidden="true">2.14.</strong> Conxtd</a></li><li class="chapter-item expanded "><a href="../Integrations/CSL Dualcom.html"><strong aria-hidden="true">2.15.</strong> CSL Dualcom</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics ANPR.html"><strong aria-hidden="true">2.16.</strong> Daktronics ANPR</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics.html"><strong aria-hidden="true">2.17.</strong> Daktronics</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros Alarms.html"><strong aria-hidden="true">2.18.</strong> Dedicated Micros Alarms</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros V9.html"><strong aria-hidden="true">2.19.</strong> Dedicated Micros V9</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec User.html"><strong aria-hidden="true">2.20.</strong> Entrotec User</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec.html"><strong aria-hidden="true">2.21.</strong> Entrotec</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun Requirements.html"><strong aria-hidden="true">2.22.</strong> EverRun Requirements</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun.html"><strong aria-hidden="true">2.23.</strong> EverRun</a></li><li class="chapter-item expanded "><a href="../Integrations/Failover Solutions.html"><strong aria-hidden="true">2.24.</strong> Failover Solutions</a></li><li class="chapter-item expanded "><a href="../Integrations/GDPR Manual.html"><strong aria-hidden="true">2.25.</strong> GDPR Manual</a></li><li class="chapter-item expanded "><a href="../Integrations/Guard Tour.html"><strong aria-hidden="true">2.26.</strong> Guard Tour</a></li><li class="chapter-item expanded "><a href="../Integrations/Hanwha.html"><strong aria-hidden="true">2.27.</strong> Hanwha</a></li><li class="chapter-item expanded "><a href="../Integrations/Heitel.html"><strong aria-hidden="true">2.28.</strong> Heitel</a></li><li class="chapter-item expanded "><a href="../Integrations/Hikvision Audio.html"><strong aria-hidden="true">2.29.</strong> Hikvision Audio</a></li><li class="chapter-item expanded "><a href="../Integrations/Honeywell Morley.html"><strong aria-hidden="true">2.30.</strong> Honeywell Morley</a></li><li class="chapter-item expanded "><a href="../Integrations/Integrations.html"><strong aria-hidden="true">2.31.</strong> Integrations</a></li><li class="chapter-item expanded "><a href="../Integrations/Milestone.html"><strong aria-hidden="true">2.32.</strong> Milestone</a></li><li class="chapter-item expanded "><a href="../Integrations/North BT.html"><strong aria-hidden="true">2.33.</strong> North BT</a></li><li class="chapter-item expanded "><a href="../Integrations/nx-witness.html"><strong aria-hidden="true">2.34.</strong> NX Witness</a></li><li class="chapter-item expanded "><a href="../Integrations/Panasonic.html"><strong aria-hidden="true">2.35.</strong> Panasonic</a></li><li class="chapter-item expanded "><a href="../Integrations/Paxton V9 Migration.html"><strong aria-hidden="true">2.36.</strong> Paxton V9 Migration</a></li><li class="chapter-item expanded "><a href="../Integrations/Pelco Endura.html"><strong aria-hidden="true">2.37.</strong> Pelco Endura</a></li><li class="chapter-item expanded "><a href="../Integrations/RTSP.html"><strong aria-hidden="true">2.38.</strong> RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Samsung RTSP.html"><strong aria-hidden="true">2.39.</strong> Samsung RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Scantronics.html"><strong aria-hidden="true">2.40.</strong> Scantronics</a></li><li class="chapter-item expanded "><a href="../Integrations/SIP.html"><strong aria-hidden="true">2.41.</strong> SIP</a></li><li class="chapter-item expanded "><a href="../Integrations/SNMP.html"><strong aria-hidden="true">2.42.</strong> SNMP</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon Audio NVR.html"><strong aria-hidden="true">2.43.</strong> Stentofon Audio NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon.html"><strong aria-hidden="true">2.44.</strong> Stentofon</a></li><li class="chapter-item expanded "><a href="../Integrations/TDS.html"><strong aria-hidden="true">2.45.</strong> TDS</a></li><li class="chapter-item expanded "><a href="../Integrations/TDSi.html"><strong aria-hidden="true">2.46.</strong> TDSi</a></li><li class="chapter-item expanded "><a href="../Integrations/Texecom.html"><strong aria-hidden="true">2.47.</strong> Texecom</a></li><li class="chapter-item expanded "><a href="../Integrations/UNV.html"><strong aria-hidden="true">2.48.</strong> UNV</a></li><li class="chapter-item expanded "><a href="../Integrations/Vehant ITMS.html"><strong aria-hidden="true">2.49.</strong> Vehant ITMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Vemotion.html"><strong aria-hidden="true">2.50.</strong> Vemotion</a></li><li class="chapter-item expanded "><a href="../Integrations/Videonetics.html"><strong aria-hidden="true">2.51.</strong> Videonetics</a></li><li class="chapter-item expanded "><a href="../Integrations/ViewCast.html"><strong aria-hidden="true">2.52.</strong> ViewCast</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Keyboard.html"><strong aria-hidden="true">2.53.</strong> Viewscape Keyboard</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Motion Dection.html"><strong aria-hidden="true">2.54.</strong> Viewscape Motion Dection</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Viewscape Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Viewscape Systems/Desktop.html"><strong aria-hidden="true">3.1.</strong> Desktop</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Export Manager.html"><strong aria-hidden="true">3.2.</strong> Export Manager</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Controls.html"><strong aria-hidden="true">3.3.</strong> Pro Controls</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Server.html"><strong aria-hidden="true">3.4.</strong> Pro Server</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Surface.html"><strong aria-hidden="true">3.5.</strong> Surface</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape Systems.html"><strong aria-hidden="true">3.6.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape-Systems.html"><strong aria-hidden="true">3.7.</strong> Viewscape-Systems</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Viewscape 11.37.1 Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="coldstore-nvr"><a class="header" href="#coldstore-nvr">Coldstore NVR</a></h1>
+<h1 id="contents"><a class="header" href="#contents">Contents</a></h1>
+<ul>
+<li><a href="#overview">Overview</a>
+<ul>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#important">Important</a></li>
+</ul>
+</li>
+<li><a href="#installation">Installation</a>
+<ul>
+<li><a href="#update-bios-firmware">Update BIOS Firmware</a>
+<ul>
+<li><a href="#verifying-bios-settings">Verifying BIOS Settings</a></li>
+</ul>
+</li>
+<li><a href="#changing-the-firmware-target">Changing the firmware target</a></li>
+<li><a href="#adding-the-coldstore-to-sitescape">Adding the coldstore to Sitescape</a></li>
+<li><a href="#updating-firmware">Updating firmware</a></li>
+<li><a href="#adding-disks">Adding disks</a></li>
+</ul>
+</li>
+<li><a href="#support">Support</a>
+<ul>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#onvif-support">ONVIF Support</a></li>
+</ul>
+</li>
+<li><a href="#appendix">Appendix</a>
+<ul>
+<li><a href="#linux-commands">Linux Commands</a>
+<ul>
+<li><a href="#changing-the-ip-address">Changing the IP address</a></li>
+<li><a href="#restart-network-services">Restart network services</a></li>
+<li><a href="#check-timezone">Check timezone</a></li>
+<li><a href="#change-timezone">Change timezone</a></li>
+<li><a href="#change-ntp-servers">Change NTP Servers</a></li>
+<li><a href="#restart-ntp-service">Restart NTP service</a></li>
+<li><a href="#display-ntp-status">Display NTP status</a></li>
+<li><a href="#restart-nvr-process-is-not-running">Restart NVR Process is not running</a></li>
+</ul>
+</li>
+<li><a href="#coldstore-commands-webpage">Coldstore Commands -- Webpage</a></li>
+<li><a href="#coldstore-commands-postman">Coldstore Commands -- Postman</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="overview"><a class="header" href="#overview">Overview</a></h1>
+<p>The scope of this document is to provide instructions on performing a
+CTO (Configure To Order) on the Coldstore NVR's. This should be carried
+out prior to dispatch from the office.</p>
+<h2 id="pre-requisites"><a class="header" href="#pre-requisites">Pre-requisites</a></h2>
+<ul>
+<li>Sitescape Version 3.0.771</li>
+</ul>
+<h2 id="important"><a class="header" href="#important">Important</a></h2>
+<ul>
+<li>When changing the target DO NOT reboot the unit before adding it to
+Sitescape and updating the firmware. Otherwise this will prevent the
+unit from booting correctly</li>
+<li>All cameras must have a stream profile configured (Axis) and include
+NTP configuration. Incorrectly set time and dates can cause
+recording and playback issues</li>
+<li>Configuring various network and NTP settings using sitescape may not
+work, and in this instance it should be configured manually using
+instructions from section 4.1 Linux Commands in this document</li>
+<li>When using Sitescape, specify the &quot;type&quot; when adding a device.
+Please note when upgrading from Coldstore to Coldstore NVR, this
+type requires changing as well as the password. Remove the Coldstore
+and re-add it to Sitescape.</li>
+</ul>
+<h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
+<p>The basic steps for ensuring the Coldstore is functional before dispatch
+are;</p>
+<ol>
+<li>Update BIOS Firmware</li>
+<li>If using Coldstore NVR -- change the firmware target using putty</li>
+<li>Add the Coldstore to sitescape</li>
+<li>Update Coldstore firmware</li>
+<li>Insert disks and verify (If no disks are provided by the customer, use test disks)</li>
+</ol>
+<h2 id="update-bios-firmware"><a class="header" href="#update-bios-firmware">Update BIOS Firmware</a></h2>
+<ol>
+<li>Press F2 or DEL to boot into the BIOS screen (Password 3816). If you
+are not prompted for a password, this would indicate that the BIOS
+has reset, and the CMOS battery has failed. If this is the case,
+please contact engineering for guidance. The version is indicated on
+the main page as &quot;UEFI Version&quot; and this MUST be P1.70H.</li>
+<li>Copy the BIOS firmware to a USB key from (D:\Dropbox (icomply
+Ltd)\Technical\Deployment\4
+Integrations\Veracity\Coldstore\Firmware\CSTORE 15-3U PRO\BIOS
+Firmware), and plug the key into the Coldstore.</li>
+<li>In the BIOS, go to the Advanced tab and select the Instant Flash
+option.</li>
+<li>Select the \IMB1541\IMB1541.70h (P1.70H) and press enter. The BIOS
+update should then be complete</li>
+</ol>
+<h3 id="verifying-bios-settings"><a class="header" href="#verifying-bios-settings">Verifying BIOS Settings</a></h3>
+<p>The BIOS settings should be verified first in case there are any issues
+retaining these settings, for example if the CMOS battery has failed.
+Boot the unit into BIOS with the F2 or DEL key. If a password is
+requested there's a good chance the unit is retaining it's BIOS
+settings, however type &quot;3816&quot;.</p>
+<p>From here go to Storage Options -&gt; Advanced Tab -&gt; Storage
+Configuration -&gt; Select SATA 3_1 and SATA 3_2, and check Hot Plug is
+enabled for drives.</p>
+<h2 id="changing-the-firmware-target"><a class="header" href="#changing-the-firmware-target">Changing the firmware target</a></h2>
+<p>Use putty to create an SSH session to the Coldstore NVR, and login using
+the standard credentials (root).</p>
+<ul>
+<li>
+<p>From the command line, then enter &quot;cd /etc&quot;, followed by &quot;ls&quot;, which
+will display a list of files. Verify the file &quot;COLDSTORE_PRO_TARGET&quot;
+exists.</p>
+<ul>
+<li>If upgrading to Coldstore Version 2 no further action is required.</li>
+</ul>
+</li>
+<li>
+<p>If upgrading to Coldstore NVR Version 3, the target file needs to be
+renamed, following these further instructions. This is to prevent
+customers from running incorrect upgrade files.</p>
+</li>
+<li>
+<p>To change the name of the target file, enter;</p>
+</li>
+</ul>
+<pre><code>&quot;mv COLDSTORE_PRO_TARGET NVR_COLDSTORE_PRO_TARGET&quot;
+</code></pre>
+<h2 id="adding-the-coldstore-to-sitescape"><a class="header" href="#adding-the-coldstore-to-sitescape">Adding the coldstore to Sitescape</a></h2>
+<p>TBC -- Awaiting release of Sitescape</p>
+<h2 id="updating-firmware"><a class="header" href="#updating-firmware">Updating firmware</a></h2>
+<p>Updating the firmware is carried out using Sitescape and the current
+version at the time of writing this manual is x. Select &quot;Setup&quot; followed
+by &quot;firmware&quot; (If Setup doesn't appear at the top next to &quot;Site
+Devices&quot;, it's because you need to click &quot;All Devices&quot; on the left
+first. Browse to the upgrade firmware 3x.zip, apply changes and click ok</p>
+<h2 id="adding-disks"><a class="header" href="#adding-disks">Adding disks</a></h2>
+<p>After all the previous steps are complete, insert the disks. If the
+customer isn't providing any disks, use the test disks. Ensure all drive
+bays are tested and working.</p>
+<p>It's important to remove these disks afterwards and ship them separately
+to the unit.</p>
+<h1 id="support"><a class="header" href="#support">Support</a></h1>
+<ul>
+<li>Any maintenance</li>
+</ul>
+<h2 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h2>
+<ul>
+<li>Troubleshooting steps (Hardware / Software / Configuration)</li>
+<li>Webpage URLs :</li>
+</ul>
+<p><code>http://(ipaddress)/api/v1.2/</code></p>
+<p>Additional parameters: /device /channels /</p>
+<ul>
+<li>Webpage u/p Admin/DefaultPass1#</li>
+<li>View Coldstore Live RTSP streams:
+<code>rtsp://coldstoreipaddress/live/trinitychannelkey</code></li>
+<li>View Coldstore Recorded RTSP streams:
+<code>rtsp://coldstoreipaddress/vod/trinitychannelkey</code></li>
+</ul>
+<h2 id="debugging"><a class="header" href="#debugging">Debugging</a></h2>
+<ul>
+<li>Any debugging or logs required for further investigation</li>
+</ul>
+<h2 id="onvif"><a class="header" href="#onvif">ONVIF</a></h2>
+<ul>
+<li>
+<p>Comments from CS Devs,&quot; can use ONVIF S/G interface - so ONVIF
+device manager (use profile S for live viewing) and can get the live
+RTSP string from that, recorded ones are just 'vod' instead of
+'live' or the NVR supports ONVIF G interface too.&quot;</p>
+</li>
+<li>
+<p>Stream urls are:
+<code>rtsp://10.0.0.140/live/exampledeviceidinsitescape/0/default</code>
+<code>rtsp://10.0.0.140/vod/exampledeviceidinsitescape/0/default</code></p>
+</li>
+<li>
+<p>The vod stream is not live, it starts the stream at the very
+beginning when it first starts recording.</p>
+</li>
+</ul>
+<h1 id="appendix"><a class="header" href="#appendix">Appendix</a></h1>
+<h2 id="linux-commands"><a class="header" href="#linux-commands">Linux Commands</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Command</th><th>Description</th></tr></thead><tbody>
+<tr><td>I</td><td>Insert command</td></tr>
+<tr><td>Esc</td><td>Leave editor mode</td></tr>
+<tr><td>:</td><td>Prefix for x and q! commands</td></tr>
+<tr><td>X</td><td>Save and quit from editor</td></tr>
+<tr><td>q!</td><td>Quit without saving from editor</td></tr>
+</tbody></table>
+</div>
+<h3 id="changing-the-ip-address"><a class="header" href="#changing-the-ip-address">Changing the IP address</a></h3>
+<p><code>vi /etc/network/interfaces</code></p>
+<h3 id="restart-network-services"><a class="header" href="#restart-network-services">Restart network services</a></h3>
+<p>If device is unreachable on the network (Plug in monitor to device)</p>
+<p><code>/etc/init.d/networking restart</code></p>
+<h3 id="check-timezone"><a class="header" href="#check-timezone">Check timezone</a></h3>
+<p><code>ls -l /etc/localtime</code></p>
+<blockquote>
+<p>lrwxrwxrwx 1 root root 33 May 14 2018 /etc/localtime -&gt; /usr/share/zoneinfo/Europe/London</p>
+</blockquote>
+<h3 id="change-timezone"><a class="header" href="#change-timezone">Change timezone</a></h3>
+<p><code>rm /etc/localtime ; ln -s /usr/share/zoneinfo/Europe/London /etc/localtime</code></p>
+<h3 id="change-ntp-servers"><a class="header" href="#change-ntp-servers">Change NTP Servers</a></h3>
+<p><code>vi /etc/ntp.conf</code></p>
+<h3 id="restart-ntp-service"><a class="header" href="#restart-ntp-service">Restart NTP service</a></h3>
+<p>To allow it to sync (WARNING: Stops recording and unit requires
+rebooting to work again)</p>
+<p><code>/etc/init.d/ntpd restart</code></p>
+<h3 id="display-ntp-status"><a class="header" href="#display-ntp-status">Display NTP status</a></h3>
+<p><code>ntpq -p</code></p>
+<h3 id="restart-nvr-process-is-not-running"><a class="header" href="#restart-nvr-process-is-not-running">Restart NVR Process is not running</a></h3>
+<p>To start it:
+<code>monit start coldstore_nvr_app</code></p>
+<p>To see what's running:
+<code>monit status</code></p>
+<h3 id="dispalying-username--password"><a class="header" href="#dispalying-username--password">Dispalying username / password</a></h3>
+<h2 id="coldstore-commands----webpage"><a class="header" href="#coldstore-commands----webpage">Coldstore Commands -- Webpage</a></h2>
+<p><code>http://10.0.0.140/api/v1.2/channels</code></p>
+<h2 id="coldstore-commands----postman"><a class="header" href="#coldstore-commands----postman">Coldstore Commands -- Postman</a></h2>
+<p>Force Disk Step (Resolves 'all disks running' issue when set to
+Coldstore Mirror)</p>
+<p><code>PUT Command - http://\&lt;ip\&gt;/api/v1.2/disk/force_disk_step</code></p>
+<p><code>Authentication: Digest Auth -- U:Admin P:DefaultPass1#</code></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Integrations/Coldstore Footage Nuke.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../Integrations/Commend.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Integrations/Coldstore Footage Nuke.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../Integrations/Commend.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

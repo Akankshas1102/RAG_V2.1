@@ -1,0 +1,510 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>AXIS IO - Viewscape 11.37.1 Manual</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Introduction.html"><strong aria-hidden="true">1.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Integrations</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Integrations/Active Directory.html"><strong aria-hidden="true">2.1.</strong> Active Directory</a></li><li class="chapter-item expanded "><a href="../Integrations/Adpro.html"><strong aria-hidden="true">2.2.</strong> Adpro</a></li><li class="chapter-item expanded "><a href="../Integrations/AMAG.html"><strong aria-hidden="true">2.3.</strong> AMAG</a></li><li class="chapter-item expanded "><a href="../Integrations/Assa Abloy.html"><strong aria-hidden="true">2.4.</strong> Assa Abloy</a></li><li class="chapter-item expanded "><a href="../Integrations/Avigilon.html"><strong aria-hidden="true">2.5.</strong> Avigilon</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Camera Station.html"><strong aria-hidden="true">2.6.</strong> Axis Camera Station</a></li><li class="chapter-item expanded "><a href="../Integrations/AXIS IO.html" class="active"><strong aria-hidden="true">2.7.</strong> AXIS IO</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Virtual Camera.html"><strong aria-hidden="true">2.8.</strong> Axis Virtual Camera</a></li><li class="chapter-item expanded "><a href="../Integrations/Bosch Analytics Motion.html"><strong aria-hidden="true">2.9.</strong> Bosch Analytics Motion</a></li><li class="chapter-item expanded "><a href="../Integrations/BVMS.html"><strong aria-hidden="true">2.10.</strong> Bosch BVMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore Footage Nuke.html"><strong aria-hidden="true">2.11.</strong> Coldstore Footage Nuke</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore NVR.html"><strong aria-hidden="true">2.12.</strong> Coldstore NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Commend.html"><strong aria-hidden="true">2.13.</strong> Commend</a></li><li class="chapter-item expanded "><a href="../Integrations/Conxtd.html"><strong aria-hidden="true">2.14.</strong> Conxtd</a></li><li class="chapter-item expanded "><a href="../Integrations/CSL Dualcom.html"><strong aria-hidden="true">2.15.</strong> CSL Dualcom</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics ANPR.html"><strong aria-hidden="true">2.16.</strong> Daktronics ANPR</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics.html"><strong aria-hidden="true">2.17.</strong> Daktronics</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros Alarms.html"><strong aria-hidden="true">2.18.</strong> Dedicated Micros Alarms</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros V9.html"><strong aria-hidden="true">2.19.</strong> Dedicated Micros V9</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec User.html"><strong aria-hidden="true">2.20.</strong> Entrotec User</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec.html"><strong aria-hidden="true">2.21.</strong> Entrotec</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun Requirements.html"><strong aria-hidden="true">2.22.</strong> EverRun Requirements</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun.html"><strong aria-hidden="true">2.23.</strong> EverRun</a></li><li class="chapter-item expanded "><a href="../Integrations/Failover Solutions.html"><strong aria-hidden="true">2.24.</strong> Failover Solutions</a></li><li class="chapter-item expanded "><a href="../Integrations/GDPR Manual.html"><strong aria-hidden="true">2.25.</strong> GDPR Manual</a></li><li class="chapter-item expanded "><a href="../Integrations/Guard Tour.html"><strong aria-hidden="true">2.26.</strong> Guard Tour</a></li><li class="chapter-item expanded "><a href="../Integrations/Hanwha.html"><strong aria-hidden="true">2.27.</strong> Hanwha</a></li><li class="chapter-item expanded "><a href="../Integrations/Heitel.html"><strong aria-hidden="true">2.28.</strong> Heitel</a></li><li class="chapter-item expanded "><a href="../Integrations/Hikvision Audio.html"><strong aria-hidden="true">2.29.</strong> Hikvision Audio</a></li><li class="chapter-item expanded "><a href="../Integrations/Honeywell Morley.html"><strong aria-hidden="true">2.30.</strong> Honeywell Morley</a></li><li class="chapter-item expanded "><a href="../Integrations/Integrations.html"><strong aria-hidden="true">2.31.</strong> Integrations</a></li><li class="chapter-item expanded "><a href="../Integrations/Milestone.html"><strong aria-hidden="true">2.32.</strong> Milestone</a></li><li class="chapter-item expanded "><a href="../Integrations/North BT.html"><strong aria-hidden="true">2.33.</strong> North BT</a></li><li class="chapter-item expanded "><a href="../Integrations/nx-witness.html"><strong aria-hidden="true">2.34.</strong> NX Witness</a></li><li class="chapter-item expanded "><a href="../Integrations/Panasonic.html"><strong aria-hidden="true">2.35.</strong> Panasonic</a></li><li class="chapter-item expanded "><a href="../Integrations/Paxton V9 Migration.html"><strong aria-hidden="true">2.36.</strong> Paxton V9 Migration</a></li><li class="chapter-item expanded "><a href="../Integrations/Pelco Endura.html"><strong aria-hidden="true">2.37.</strong> Pelco Endura</a></li><li class="chapter-item expanded "><a href="../Integrations/RTSP.html"><strong aria-hidden="true">2.38.</strong> RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Samsung RTSP.html"><strong aria-hidden="true">2.39.</strong> Samsung RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Scantronics.html"><strong aria-hidden="true">2.40.</strong> Scantronics</a></li><li class="chapter-item expanded "><a href="../Integrations/SIP.html"><strong aria-hidden="true">2.41.</strong> SIP</a></li><li class="chapter-item expanded "><a href="../Integrations/SNMP.html"><strong aria-hidden="true">2.42.</strong> SNMP</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon Audio NVR.html"><strong aria-hidden="true">2.43.</strong> Stentofon Audio NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon.html"><strong aria-hidden="true">2.44.</strong> Stentofon</a></li><li class="chapter-item expanded "><a href="../Integrations/TDS.html"><strong aria-hidden="true">2.45.</strong> TDS</a></li><li class="chapter-item expanded "><a href="../Integrations/TDSi.html"><strong aria-hidden="true">2.46.</strong> TDSi</a></li><li class="chapter-item expanded "><a href="../Integrations/Texecom.html"><strong aria-hidden="true">2.47.</strong> Texecom</a></li><li class="chapter-item expanded "><a href="../Integrations/UNV.html"><strong aria-hidden="true">2.48.</strong> UNV</a></li><li class="chapter-item expanded "><a href="../Integrations/Vehant ITMS.html"><strong aria-hidden="true">2.49.</strong> Vehant ITMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Vemotion.html"><strong aria-hidden="true">2.50.</strong> Vemotion</a></li><li class="chapter-item expanded "><a href="../Integrations/Videonetics.html"><strong aria-hidden="true">2.51.</strong> Videonetics</a></li><li class="chapter-item expanded "><a href="../Integrations/ViewCast.html"><strong aria-hidden="true">2.52.</strong> ViewCast</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Keyboard.html"><strong aria-hidden="true">2.53.</strong> Viewscape Keyboard</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Motion Dection.html"><strong aria-hidden="true">2.54.</strong> Viewscape Motion Dection</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Viewscape Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Viewscape Systems/Desktop.html"><strong aria-hidden="true">3.1.</strong> Desktop</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Export Manager.html"><strong aria-hidden="true">3.2.</strong> Export Manager</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Controls.html"><strong aria-hidden="true">3.3.</strong> Pro Controls</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Server.html"><strong aria-hidden="true">3.4.</strong> Pro Server</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Surface.html"><strong aria-hidden="true">3.5.</strong> Surface</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape Systems.html"><strong aria-hidden="true">3.6.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape-Systems.html"><strong aria-hidden="true">3.7.</strong> Viewscape-Systems</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Viewscape 11.37.1 Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="axis-io"><a class="header" href="#axis-io">AXIS IO</a></h1>
+<h1 id="contents"><a class="header" href="#contents">Contents</a></h1>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#functionality">Functionality</a></li>
+<li><a href="#pre-requisites">Pre-Requisites</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#configuring-the-axis-device-in-the-axis-webpage">Configuring the Axis Device in the Axis Webpage</a></li>
+<li><a href="#configuring-the-axis-device-in-viewscape-settings-editor">Configuring The Axis Device in Viewscape Settings Editor</a></li>
+<li><a href="#configuring-the-axis-device-input-in-viewscape">Configuring the Axis Device Input in Viewscape</a></li>
+</ul>
+<h1 id="overview"><a class="header" href="#overview">Overview</a></h1>
+<ul>
+<li>The AXIS Network IO Relay module is a piece of equipment used to
+connect to devices such as motion detectors or switches.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image2.jpeg" alt="" /></p>
+<h2 id="functionality"><a class="header" href="#functionality">Functionality</a></h2>
+<ul>
+<li>The Axis device can connect to motion detectors or switches and send
+alerts from the device to Viewscape, which then can be integrated
+further.</li>
+<li>You will need to make sure that this device connects to either a 12v
+power connection or a POE injector.</li>
+</ul>
+<h1 id="pre-requisites"><a class="header" href="#pre-requisites">Pre-Requisites</a></h1>
+<ul>
+<li>You will need a web browser to access the web client which is used
+to change important settings for the device, such as the active
+state of the I/O or the type of I/O used or to add events (both
+discussed later in the guide).</li>
+<li>You will need Viewscape installed so you can add in important events
+into Viewscape so you can see which doors are opening and closing as
+an example.</li>
+<li>You will need Viewscape Settings Editor to change listening settings
+as well as what ports are being used for the AXIS device.</li>
+<li>For testing you will need to connect &quot;ground symbol&quot; to a IO
+connection, once configured.</li>
+</ul>
+<h1 id="configuration"><a class="header" href="#configuration">Configuration</a></h1>
+<h2 id="configuring-the-axis-device-in-the-axis-webpage"><a class="header" href="#configuring-the-axis-device-in-the-axis-webpage">Configuring the Axis Device in the Axis Webpage</a></h2>
+<ul>
+<li>Enter the IP of the device into a web browser (if you don't know the
+IP of the device make sure to check with Wireshark). This can be
+done in the address bar at the top of a web browser, such as
+Microsoft Edge or Google Chrome.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image3.png" alt="" /></p>
+<ul>
+<li>You will be prompted to log in with a browser prompt.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image4.png" alt="" /></p>
+<ul>
+<li>You will then see a list of I/Os, such as the one pictured down
+below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image5.png" alt="" /></p>
+<p>When further configuration is done you can check this page to make sure
+that this I/O is working correctly before further configuration is done
+(such as for Viewscape and Viewscape Settings Editor).</p>
+<ul>
+<li>Click settings highlighted in red to continue.</li>
+<li>In the picture down below make sure that the configuration matches,
+I/O 1 has been configured as a digital input. An alarm will appear
+in Viewscape when the connection is grounded.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image6.png" alt="" /></p>
+<p>Then click save, which is highlighted in blue.</p>
+<ul>
+<li>Then in the toolbar at the top you will need to click preferences as
+this allows you to have more customisation when it comes to
+registering events.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image7.png" alt="" /></p>
+<ul>
+<li>Then as you carry on click the next configuration button.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image8.png" alt="" /></p>
+<ul>
+<li>You will then be greeted by the generic AXIS configuration screen.
+On the left-hand side, you will see options. You will need to find
+the &quot;events&quot; tab which is pictured down below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image9.png" alt="" /></p>
+<ul>
+<li>Go to Recipients under the events tab. This is pictured above</li>
+<li>On the &quot;recipients&quot; page click add at the bottom of the page itself.
+Below this there will be a picture which is highlighted with the
+option you need to click.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image10.png" alt="" /></p>
+<ul>
+<li>You will need to give it a name (name in example picture below is
+the generic name), this is required for the device and not
+Viewscape.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image11.PNG" alt="" /></p>
+<ul>
+<li>You will then need to change the recipient type to TCP and then
+configure the network address to the Viewscape Pro Server. See
+picture down below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image11.PNG" alt="" /></p>
+<ul>
+<li>You will then need to configure the port to a open port that you
+also plan on making the listening port for Axis, check the example
+picture down below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image12.PNG" alt="" />
+This was used on a test system; this
+will be different on your system.</p>
+<ul>
+<li>To make sure this works you will need to press the test button to
+make sure that it connects.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image13.png" alt="" /></p>
+<ul>
+<li>You will then need get a browser prompt telling you if it was
+successful or not, pictured down below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image14.PNG" alt="" /></p>
+<ul>
+<li>Then press OK and then you can view the recipient which has been
+added. Pictured recipient down below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image15.PNG" alt="" /></p>
+<ul>
+<li>To proceed with action rules, you need to go back to events and then
+click action rules. This is pictured down below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image9.png" alt="" /></p>
+<p>Under &quot;action rules&quot; you will see a blank list (unless other actions
+have been added previously). A blank list is pictured down below.</p>
+<p><img src="screenshots/AXISIO/image16.png" alt="" /></p>
+<ul>
+<li>On the picture above you will need to click where the green
+highlighted button is to add a rule to the relay module.</li>
+<li>You will then be greeted with the screen pictured down below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image17.png" alt="" /></p>
+<p>This is going to be broken down.</p>
+<ul>
+<li>Firstly, assign a name to the rule, a name could be as simple as I/O
+1 or Input 1. This doesn't matter as much as long as it's
+recognisable. Where this option is located is down below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image17.png" alt="" /></p>
+<ul>
+<li>The next tab to configure is the &quot;trigger&quot; tab. This is where you
+can decide what type of signal will appear as well as which port it
+will be using. Details of them being filled in are down below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image17.png" alt="" /></p>
+<p>Filled out trigger.</p>
+<p><img src="screenshots/AXISIO/image18.png" alt="" /></p>
+<p>These are the settings used in testing which worked, the highlighted box
+is the variable which can be changed.</p>
+<p><em>At BCP &quot;Active&quot; had to be set as &quot;No&quot; for the panic alarms to come
+through when pressed. Before they would only come through on reset. ~
+Josh</em></p>
+<blockquote>
+<p><strong>NOTE: I/O 1</strong> (pictured below) <strong>IS REFERRED TO AS 0 IN THE HIGHLIGHTED BOX ABOVE!</strong></p>
+</blockquote>
+<p><img src="screenshots/AXISIO/image19.jpeg" alt="" />
+I/0 2 is referred to as 1 etc on the highlighted menu above.</p>
+<ul>
+<li>Under actions you will need to select a type, for our use case we
+will want to have a notification be sent since that is how we pick
+it up in Viewscape.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image20.png" alt="" /></p>
+<ul>
+<li>You will then have to select a recipient, or the one you setup
+earlier. This is pictured down below</li>
+</ul>
+<p><img src="screenshots/AXISIO/image20.png" alt="" /></p>
+<ul>
+<li>For the message this has to be specific since its used for each
+individual input, input 5 is the one pictured down below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image20.png" alt="" /></p>
+<p>As a reference point this is entered &quot;<strong>axe,Input 5 Triggered@</strong>&quot;. This
+changes for each input.</p>
+<h2 id="configuring-the-axis-device-in-viewscape-settings-editor"><a class="header" href="#configuring-the-axis-device-in-viewscape-settings-editor">Configuring The Axis Device in Viewscape Settings Editor</a></h2>
+<ul>
+<li>To configure the Axis device, you will need to load up Viewscape
+Settings Editor on VS-VPS01 and you need to go to the Pro Server
+tab.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image21.png" alt="" /></p>
+<ul>
+<li>Then you will need to scroll down and look for the name
+&quot;ListeningPortAxis&quot; and assign it the Port number you gave it
+earlier within the Webpage for the module.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image22.png" alt="" /></p>
+<ul>
+<li>Then &quot;save current page&quot; within the Viewscape Settings Editor at the
+bottom to apply the changes.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image23.png" alt="" /></p>
+<h2 id="configuring-the-axis-device-input-in-viewscape"><a class="header" href="#configuring-the-axis-device-input-in-viewscape">Configuring the Axis Device Input in Viewscape</a></h2>
+<ul>
+<li>You will need to sign into Viewscape using an administrator level
+account to proceed, due to user level privileges.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image24.png" alt="" /></p>
+<ul>
+<li>At the top toolbar you will need to click admin, pictured down
+below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image25.PNG" alt="" /></p>
+<ul>
+<li>You then need to go to &quot;command and control&quot; and then device state
+routing and then device, this can be seen down below and highlighted
+in blue.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image26.png" alt="" /></p>
+<ul>
+<li>In the device tab you will have to give the &quot;device&quot; a name, for my
+example I've called it &quot;AXIS IO Input 4&quot; so its easily identifiable
+and have given it the &quot;generic message IP device&quot; device type within
+Viewscape.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image27.png" alt="" /></p>
+<ul>
+<li>Along the toolbar below the name of the device and the device type
+you will several options (pictured down below), you will need to
+pick &quot;Pro Events&quot;.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image28.png" alt="" /></p>
+<p>Pro events is the second one along and is also pictured down below.</p>
+<p><img src="screenshots/AXISIO/image29.PNG" alt="" /></p>
+<ul>
+<li>You will need to click within the highlighted box pictured down
+below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image30.png" alt="" /></p>
+<ul>
+<li>You then need to click &quot;Event ID&quot; in the events box above add event.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image31.png" alt="" /></p>
+<ul>
+<li>You will then need to add an event code so you will be able to
+identify the device event when it comes through via Viewscape.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image32.jpeg" alt="" /></p>
+<ul>
+<li>And then you will need to click create pro event.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image33.png" alt="" /></p>
+<ul>
+<li>When the &quot;Pro Event&quot; Form appears, you will need to give it a
+name/alias. View the image down below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image34.png" alt="" /></p>
+<ul>
+<li>Give the pro alarm a type, such as uncategorised. This is pictured
+down below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image34.png" alt="" /></p>
+<ul>
+<li>You will then need to give the pro event a message for the alert
+which appears in Viewscape, view the screenshot down below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image35.png" alt="" /></p>
+<ul>
+<li>And then make the alert reactive or non-Reactive if required, refer
+to the image below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image35.png" alt="" /></p>
+<ul>
+<li>You will then need to click priority next to alert, the image is
+down below and highlighted.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image35.png" alt="" /></p>
+<ul>
+<li>Under colour priority you will need to click the drop-down box and
+click a colour, for this example I clicked default. Image is down
+below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image36.png" alt="" /></p>
+<p>Then I clicked the drop-down tab.</p>
+<p><img src="screenshots/AXISIO/image37.png" alt="" /></p>
+<ul>
+<li>At the bottom of this tab, you will need to click &quot;activate
+workstation actions automatically on accept&quot;. Check the screenshot
+below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image38.png" alt="" /></p>
+<ul>
+<li>And then click save + close.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image39.png" alt="" /></p>
+<ul>
+<li>You will then get taken back to the device tab, go to pro event and
+click the sunglasses.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image40.png" alt="" /></p>
+<p>And the glasses are to the right, see image down below for a larger
+image.</p>
+<p><img src="screenshots/AXISIO/image41.png" alt="" /></p>
+<ul>
+<li>Then click the AXIS IO Input you want to add, examples are down
+below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image42.png" alt="" /></p>
+<ul>
+<li>Then click add event back on the device tab.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image43.png" alt="" /></p>
+<ul>
+<li>Then click save event.</li>
+</ul>
+<p>And this appears in the bottom tab showing that it works.</p>
+<p><img src="screenshots/AXISIO/image44.png" alt="" /></p>
+<ul>
+<li>And then click save and close at the bottom of the devices.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image39.png" alt="" /></p>
+<ul>
+<li>Then use a paperclip and insert it into one of the IO ports on the
+device to make sure it works.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image45.jpeg" alt="" /></p>
+<ul>
+<li>If this has been configured correctly you should then get an alert
+within Viewscape, pictured below.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image46.png" alt="" /></p>
+<ul>
+<li>In the Pro Server this message will appear.</li>
+</ul>
+<p><img src="screenshots/AXISIO/image47.png" alt="" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Integrations/Axis Camera Station.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../Integrations/Axis Virtual Camera.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Integrations/Axis Camera Station.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../Integrations/Axis Virtual Camera.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

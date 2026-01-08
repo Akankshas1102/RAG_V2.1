@@ -1,0 +1,415 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ViewCast - Viewscape 11.37.1 Manual</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Introduction.html"><strong aria-hidden="true">1.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Integrations</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Integrations/Active Directory.html"><strong aria-hidden="true">2.1.</strong> Active Directory</a></li><li class="chapter-item expanded "><a href="../Integrations/Adpro.html"><strong aria-hidden="true">2.2.</strong> Adpro</a></li><li class="chapter-item expanded "><a href="../Integrations/AMAG.html"><strong aria-hidden="true">2.3.</strong> AMAG</a></li><li class="chapter-item expanded "><a href="../Integrations/Assa Abloy.html"><strong aria-hidden="true">2.4.</strong> Assa Abloy</a></li><li class="chapter-item expanded "><a href="../Integrations/Avigilon.html"><strong aria-hidden="true">2.5.</strong> Avigilon</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Camera Station.html"><strong aria-hidden="true">2.6.</strong> Axis Camera Station</a></li><li class="chapter-item expanded "><a href="../Integrations/AXIS IO.html"><strong aria-hidden="true">2.7.</strong> AXIS IO</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Virtual Camera.html"><strong aria-hidden="true">2.8.</strong> Axis Virtual Camera</a></li><li class="chapter-item expanded "><a href="../Integrations/Bosch Analytics Motion.html"><strong aria-hidden="true">2.9.</strong> Bosch Analytics Motion</a></li><li class="chapter-item expanded "><a href="../Integrations/BVMS.html"><strong aria-hidden="true">2.10.</strong> Bosch BVMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore Footage Nuke.html"><strong aria-hidden="true">2.11.</strong> Coldstore Footage Nuke</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore NVR.html"><strong aria-hidden="true">2.12.</strong> Coldstore NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Commend.html"><strong aria-hidden="true">2.13.</strong> Commend</a></li><li class="chapter-item expanded "><a href="../Integrations/Conxtd.html"><strong aria-hidden="true">2.14.</strong> Conxtd</a></li><li class="chapter-item expanded "><a href="../Integrations/CSL Dualcom.html"><strong aria-hidden="true">2.15.</strong> CSL Dualcom</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics ANPR.html"><strong aria-hidden="true">2.16.</strong> Daktronics ANPR</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics.html"><strong aria-hidden="true">2.17.</strong> Daktronics</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros Alarms.html"><strong aria-hidden="true">2.18.</strong> Dedicated Micros Alarms</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros V9.html"><strong aria-hidden="true">2.19.</strong> Dedicated Micros V9</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec User.html"><strong aria-hidden="true">2.20.</strong> Entrotec User</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec.html"><strong aria-hidden="true">2.21.</strong> Entrotec</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun Requirements.html"><strong aria-hidden="true">2.22.</strong> EverRun Requirements</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun.html"><strong aria-hidden="true">2.23.</strong> EverRun</a></li><li class="chapter-item expanded "><a href="../Integrations/Failover Solutions.html"><strong aria-hidden="true">2.24.</strong> Failover Solutions</a></li><li class="chapter-item expanded "><a href="../Integrations/GDPR Manual.html"><strong aria-hidden="true">2.25.</strong> GDPR Manual</a></li><li class="chapter-item expanded "><a href="../Integrations/Guard Tour.html"><strong aria-hidden="true">2.26.</strong> Guard Tour</a></li><li class="chapter-item expanded "><a href="../Integrations/Hanwha.html"><strong aria-hidden="true">2.27.</strong> Hanwha</a></li><li class="chapter-item expanded "><a href="../Integrations/Heitel.html"><strong aria-hidden="true">2.28.</strong> Heitel</a></li><li class="chapter-item expanded "><a href="../Integrations/Hikvision Audio.html"><strong aria-hidden="true">2.29.</strong> Hikvision Audio</a></li><li class="chapter-item expanded "><a href="../Integrations/Honeywell Morley.html"><strong aria-hidden="true">2.30.</strong> Honeywell Morley</a></li><li class="chapter-item expanded "><a href="../Integrations/Integrations.html"><strong aria-hidden="true">2.31.</strong> Integrations</a></li><li class="chapter-item expanded "><a href="../Integrations/Milestone.html"><strong aria-hidden="true">2.32.</strong> Milestone</a></li><li class="chapter-item expanded "><a href="../Integrations/North BT.html"><strong aria-hidden="true">2.33.</strong> North BT</a></li><li class="chapter-item expanded "><a href="../Integrations/nx-witness.html"><strong aria-hidden="true">2.34.</strong> NX Witness</a></li><li class="chapter-item expanded "><a href="../Integrations/Panasonic.html"><strong aria-hidden="true">2.35.</strong> Panasonic</a></li><li class="chapter-item expanded "><a href="../Integrations/Paxton V9 Migration.html"><strong aria-hidden="true">2.36.</strong> Paxton V9 Migration</a></li><li class="chapter-item expanded "><a href="../Integrations/Pelco Endura.html"><strong aria-hidden="true">2.37.</strong> Pelco Endura</a></li><li class="chapter-item expanded "><a href="../Integrations/RTSP.html"><strong aria-hidden="true">2.38.</strong> RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Samsung RTSP.html"><strong aria-hidden="true">2.39.</strong> Samsung RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Scantronics.html"><strong aria-hidden="true">2.40.</strong> Scantronics</a></li><li class="chapter-item expanded "><a href="../Integrations/SIP.html"><strong aria-hidden="true">2.41.</strong> SIP</a></li><li class="chapter-item expanded "><a href="../Integrations/SNMP.html"><strong aria-hidden="true">2.42.</strong> SNMP</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon Audio NVR.html"><strong aria-hidden="true">2.43.</strong> Stentofon Audio NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon.html"><strong aria-hidden="true">2.44.</strong> Stentofon</a></li><li class="chapter-item expanded "><a href="../Integrations/TDS.html"><strong aria-hidden="true">2.45.</strong> TDS</a></li><li class="chapter-item expanded "><a href="../Integrations/TDSi.html"><strong aria-hidden="true">2.46.</strong> TDSi</a></li><li class="chapter-item expanded "><a href="../Integrations/Texecom.html"><strong aria-hidden="true">2.47.</strong> Texecom</a></li><li class="chapter-item expanded "><a href="../Integrations/UNV.html"><strong aria-hidden="true">2.48.</strong> UNV</a></li><li class="chapter-item expanded "><a href="../Integrations/Vehant ITMS.html"><strong aria-hidden="true">2.49.</strong> Vehant ITMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Vemotion.html"><strong aria-hidden="true">2.50.</strong> Vemotion</a></li><li class="chapter-item expanded "><a href="../Integrations/Videonetics.html"><strong aria-hidden="true">2.51.</strong> Videonetics</a></li><li class="chapter-item expanded "><a href="../Integrations/ViewCast.html" class="active"><strong aria-hidden="true">2.52.</strong> ViewCast</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Keyboard.html"><strong aria-hidden="true">2.53.</strong> Viewscape Keyboard</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Motion Dection.html"><strong aria-hidden="true">2.54.</strong> Viewscape Motion Dection</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Viewscape Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Viewscape Systems/Desktop.html"><strong aria-hidden="true">3.1.</strong> Desktop</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Export Manager.html"><strong aria-hidden="true">3.2.</strong> Export Manager</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Controls.html"><strong aria-hidden="true">3.3.</strong> Pro Controls</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Server.html"><strong aria-hidden="true">3.4.</strong> Pro Server</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Surface.html"><strong aria-hidden="true">3.5.</strong> Surface</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape Systems.html"><strong aria-hidden="true">3.6.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape-Systems.html"><strong aria-hidden="true">3.7.</strong> Viewscape-Systems</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Viewscape 11.37.1 Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="viewcast"><a class="header" href="#viewcast">ViewCast</a></h1>
+<h1 id="contents"><a class="header" href="#contents">Contents</a></h1>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#functionality">Functionality</a></li>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#configuring-viewcast">Configuring ViewCast</a></li>
+<li><a href="#adding-camera-stream-authentication">Adding Camera Stream Authentication</a></li>
+<li><a href="#adding-an-rtsp-stream-into-viewscape">Adding an RTSP Stream into Viewscape</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#appendix">Appendix</a></li>
+</ul>
+<h1 id="overview"><a class="header" href="#overview">Overview</a></h1>
+<ul>
+<li>ViewCast is a part of the surface controller which is used in
+conjunction with Viewscape. This allows you to setup an RTSP stream
+of your desktop monitor (or an application running on the PC).</li>
+</ul>
+<h2 id="functionality"><a class="header" href="#functionality">Functionality</a></h2>
+<ul>
+<li>ViewCast allows you to setup an RTSP stream when running the surface
+controller to stream a monitor or an application to the Webstreamer
+which then distributes the video across the network.</li>
+<li>You can also setup the ViewCast RTSP stream within Viewscape and get
+the stream working within Surface Controller.</li>
+</ul>
+<h2 id="pre-requisites"><a class="header" href="#pre-requisites">Pre-requisites</a></h2>
+<ul>
+<li>You will need Viewscape to add the RTSP stream to the camera list
+which allows you to stream.</li>
+<li>You will need Viewscape Pro Server installed because this is what
+you use to setup ViewCast and to enable it within the options.</li>
+<li>For testing purposes, you can use VLC to access the RTSP stream if
+you need to troubleshoot.</li>
+<li><strong>AN INTERNET CONNECTION IS REQUIRED TO ACTIVATE VIEWCAST, YOU ALSO
+NEED TO ACTIVATE VIEWCAST ON THE WINDOWS USER ACCOUNT IT WILL BE
+USED WITH (like Operator and not the Admin account).</strong></li>
+</ul>
+<h1 id="configuration"><a class="header" href="#configuration">Configuration</a></h1>
+<h2 id="configuring-viewcast"><a class="header" href="#configuring-viewcast">Configuring ViewCast</a></h2>
+<ul>
+<li>To configure ViewCast you will need to load up Viewscape Settings
+Editor, this is because you will need to add a license to the key as
+well as setup a username and password used.</li>
+<li>Load up Viewscape Settings Editor</li>
+<li>Go to the surface tab and then click surface001.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image2.png" alt="" /></p>
+<ul>
+<li>Then below that click surface001</li>
+</ul>
+<p><img src="screenshots/ViewCast/image3.png" alt="" /></p>
+<ul>
+<li>Scroll to the bottom of the page and click ViewCast Key and add the
+key provided.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image4.png" alt="" /></p>
+<ul>
+<li>Here are the options provided within the Viewscape Editor which you can change, this guide is focussing on a basic configuration.</li>
+<li>Add the key provided within the ViewCast Key category.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image5.png" alt="" /></p>
+<ul>
+<li>If the client wants to password protect their RTSP stream add a password to the Viewcast stream.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image6.png" alt="" /></p>
+<ul>
+<li>Add a username for the stream, such as Admin or another recognisable name then save the name of the website.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image7.png" alt="" /></p>
+<ul>
+<li>Save current page at the bottom of the display.</li>
+<li>Start or restart the Viewscape Pro server to proceed.</li>
+<li>Launch Viewscape and the surface controller.</li>
+<li>After you have launched the surface controller as well as Viewscape go to the bottom right-hand corner on the taskbar and right click on the surface controller icon and click &quot;Viewcast&quot; to create a stream.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image8.png" alt="" /></p>
+<ul>
+<li>This is how to access the Viewcast options.</li>
+<li>It will pop up with an authentication window where you're then required to insert the password you provided within the Viewscape settings editor.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image9.png" alt="" /></p>
+<ul>
+<li>Type in the password into the blank box.</li>
+<li>You will then see a few sessions, which will most likely be displays. To access the stream settings, you will need to double click the sessions which appear in the windows.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image10.png" alt="" /></p>
+<ul>
+<li>The URL is for an RTSP stream, you can view this within VLC if you want to test or within a test window within Surface.</li>
+<li>When you double click the sessions which appear (view the previous screenshot) you will get a settings menu where you can change some of the settings, such as the frame rate of the stream or if the password is required to view the stream.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image11.png" alt="" /></p>
+<ul>
+<li>To change some of the more advanced settings you will need to click the admin mode icon to change things such as the frame rate.</li>
+<li>When you enable admin mode you will be prompted to enter the username and password you entered within the Viewscape settings editor.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image12.png" alt="" /></p>
+<ul>
+<li>You can now change the settings such as the frame rate (which I highly recommend, you don't want to hurt people's eyes) as one of the more basic options.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image13.png" alt="" /></p>
+<ul>
+<li>To find more settings you can click encoder settings.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image14.png" alt="" /></p>
+<ul>
+<li>The first options are JPEG and AVC (MPEG4 Part10 H264). This is type of video sent out by the encoder, JPEG will generally be a lower quality video compared to AVC.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image15.png" alt="" /></p>
+<ul>
+<li>Video usage allows you to change between 3 different options, the higher the quality more computing resources will be used.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image16.png" alt="" /></p>
+<ul>
+<li>Video profile allows you to change target quality level, high will look much better but it takes more computational power (run on baseline for now though, due to not knowing what devices it will be running on).</li>
+</ul>
+<p><img src="screenshots/ViewCast/image17.png" alt="" /></p>
+<ul>
+<li>The target bit rate allows you to change the bit rate, the higher the bit rate the less quality is lost within the stream but this might cause network issues so this will be more site specific.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image18.png" alt="" /></p>
+<ul>
+<li>Key frame interval allows you to change the amount of &quot;key&quot; frames used or the main frames used to change the picture, the more key frames the better the image at the expense of more data being used.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image19.png" alt="" /></p>
+<ul>
+<li>The next options are variable bit rates and a constant bit rate. If you want to reduce the amount of traffic used over the network a variable bit rate will be preferred.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image20.png" alt="" /></p>
+<ul>
+<li>And finally, the Overlay settings box. This allows you to put text over the video and change the font of the text and where the text appears on the stream as well as the colour.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image21.png" alt="" /></p>
+<ul>
+<li>To test the stream to make sure that it's working correctly leave the encoder settings and click the test URL button near the RTSP address at the top of the page.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image22.png" alt="" /></p>
+<ul>
+<li>When you click test URL you will get a window which shows what is happening on the monitor or application you have assigned it to.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image23.png" alt="" /></p>
+<ul>
+<li>This is also what happens when the stream window appears on the monitor you're streaming.</li>
+</ul>
+<h1 id="adding-camera-stream-authentication"><a class="header" href="#adding-camera-stream-authentication">Adding Camera Stream Authentication</a></h1>
+<p>You will need to setup camera stream authentication so you can log into
+the RTSP stream from Viewscape, if not the stream won't appear within
+surface.</p>
+<ul>
+<li>Firstly, you will need to go to Viewscape and at the top you will
+need to go to admin.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image24.png" alt="" /></p>
+<ul>
+<li>You will then need to scroll down until you see lookups, which is at
+the top of the pile.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image25.jpeg" alt="" /></p>
+<ul>
+<li>You will then see a window with a lot of options on the left-hand
+side, scroll down until you see &quot;pro camera -- stream
+authentication&quot;. This is so you can log into the camera so you can
+access the camera feed.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image26.jpeg" alt="" /></p>
+<ul>
+<li>Then you will see alias and the username and password, add the
+username and the password of the RTSP stream (this is the username
+and password you gave when you started up Viewcast).</li>
+</ul>
+<p><img src="screenshots/ViewCast/image27.jpeg" alt="" /></p>
+<ul>
+<li>Then click save and close.</li>
+</ul>
+<h1 id="adding-an-rtsp-stream-into-viewscape"><a class="header" href="#adding-an-rtsp-stream-into-viewscape">Adding an RTSP Stream into Viewscape</a></h1>
+<p>Adding an RTSP stream to Viewscape can allow you to view the stream
+within Surface or on another machine. (It's basically like adding a
+normal camera to Viewscape).</p>
+<ul>
+<li>To add an RTSP stream to Viewscape you will need to go to
+&quot;information&quot; then &quot;camera&quot;.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image28.png" alt="" /></p>
+<ul>
+<li>Give the camera a name, such as Viewcast 1 or another identifiable
+name within Viewscape.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image29.png" alt="" /></p>
+<ul>
+<li>
+<p>Then go to &quot;Pro&quot; within the window. And change the camera type to IP
+and more options will appear.<br />
+<img src="screenshots/ViewCast/image30.png" alt="" /></p>
+</li>
+<li>
+<p>Under aspect ratio change the aspect ratio to &quot;fill&quot;</p>
+</li>
+</ul>
+<p><img src="screenshots/ViewCast/image31.png" alt="" /></p>
+<ul>
+<li>Under connection add the RTSP stream URL, as this is what is uses to
+contact the stream. (You can find this from the Viewcast window).</li>
+</ul>
+<p><img src="screenshots/ViewCast/image32.png" alt="" />
+This is at the bottom of the Viewcast screen.</p>
+<p><img src="screenshots/ViewCast/image33.png" alt="" />
+This is where you add the RTSP stream.</p>
+<ul>
+<li>Add the camera stream configuration to Viewscape, this might be
+under the name of RTSP or Viewcast.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image34.png" alt="" /></p>
+<ul>
+<li>Add the camera stream authentication name, this is the username and
+password for the camera.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image35.png" alt="" /></p>
+<ul>
+<li>Then click save and close at the bottom of the window.</li>
+</ul>
+<p><img src="screenshots/ViewCast/image36.png" alt="" /></p>
+<h2 id="debugging"><a class="header" href="#debugging">Debugging</a></h2>
+<ul>
+<li>If the program works for a limited amount of time, make sure that
+the key you put into Viewscape settings editor is correct as it will
+think it's a trial key which only lasts for a small amount of time.</li>
+<li>In the alpha version if you click test URL and then close the window
+which appears to view the video also closes surface controller, VLC
+will work with RTSP streams for testing purposes.</li>
+<li>If you have the Test URL window open on the same page as its
+streaming don't leave it running because it eventually crashes.</li>
+<li>If you have configured the Viewcast as a stream within Viewscape and
+it doesn't appear in the camera list, make sure that you have the
+refreshed Pro Live.</li>
+<li>If you have configured Viewcast as a stream, make sure that the
+stream is actually running.</li>
+</ul>
+<h1 id="appendix"><a class="header" href="#appendix">Appendix</a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Integrations/Videonetics.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../Integrations/Viewscape Keyboard.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Integrations/Videonetics.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../Integrations/Viewscape Keyboard.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Assa Abloy - Viewscape 11.37.1 Manual</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Introduction.html"><strong aria-hidden="true">1.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Integrations</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Integrations/Active Directory.html"><strong aria-hidden="true">2.1.</strong> Active Directory</a></li><li class="chapter-item expanded "><a href="../Integrations/Adpro.html"><strong aria-hidden="true">2.2.</strong> Adpro</a></li><li class="chapter-item expanded "><a href="../Integrations/AMAG.html"><strong aria-hidden="true">2.3.</strong> AMAG</a></li><li class="chapter-item expanded "><a href="../Integrations/Assa Abloy.html" class="active"><strong aria-hidden="true">2.4.</strong> Assa Abloy</a></li><li class="chapter-item expanded "><a href="../Integrations/Avigilon.html"><strong aria-hidden="true">2.5.</strong> Avigilon</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Camera Station.html"><strong aria-hidden="true">2.6.</strong> Axis Camera Station</a></li><li class="chapter-item expanded "><a href="../Integrations/AXIS IO.html"><strong aria-hidden="true">2.7.</strong> AXIS IO</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Virtual Camera.html"><strong aria-hidden="true">2.8.</strong> Axis Virtual Camera</a></li><li class="chapter-item expanded "><a href="../Integrations/Bosch Analytics Motion.html"><strong aria-hidden="true">2.9.</strong> Bosch Analytics Motion</a></li><li class="chapter-item expanded "><a href="../Integrations/BVMS.html"><strong aria-hidden="true">2.10.</strong> Bosch BVMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore Footage Nuke.html"><strong aria-hidden="true">2.11.</strong> Coldstore Footage Nuke</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore NVR.html"><strong aria-hidden="true">2.12.</strong> Coldstore NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Commend.html"><strong aria-hidden="true">2.13.</strong> Commend</a></li><li class="chapter-item expanded "><a href="../Integrations/Conxtd.html"><strong aria-hidden="true">2.14.</strong> Conxtd</a></li><li class="chapter-item expanded "><a href="../Integrations/CSL Dualcom.html"><strong aria-hidden="true">2.15.</strong> CSL Dualcom</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics ANPR.html"><strong aria-hidden="true">2.16.</strong> Daktronics ANPR</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics.html"><strong aria-hidden="true">2.17.</strong> Daktronics</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros Alarms.html"><strong aria-hidden="true">2.18.</strong> Dedicated Micros Alarms</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros V9.html"><strong aria-hidden="true">2.19.</strong> Dedicated Micros V9</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec User.html"><strong aria-hidden="true">2.20.</strong> Entrotec User</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec.html"><strong aria-hidden="true">2.21.</strong> Entrotec</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun Requirements.html"><strong aria-hidden="true">2.22.</strong> EverRun Requirements</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun.html"><strong aria-hidden="true">2.23.</strong> EverRun</a></li><li class="chapter-item expanded "><a href="../Integrations/Failover Solutions.html"><strong aria-hidden="true">2.24.</strong> Failover Solutions</a></li><li class="chapter-item expanded "><a href="../Integrations/GDPR Manual.html"><strong aria-hidden="true">2.25.</strong> GDPR Manual</a></li><li class="chapter-item expanded "><a href="../Integrations/Guard Tour.html"><strong aria-hidden="true">2.26.</strong> Guard Tour</a></li><li class="chapter-item expanded "><a href="../Integrations/Hanwha.html"><strong aria-hidden="true">2.27.</strong> Hanwha</a></li><li class="chapter-item expanded "><a href="../Integrations/Heitel.html"><strong aria-hidden="true">2.28.</strong> Heitel</a></li><li class="chapter-item expanded "><a href="../Integrations/Hikvision Audio.html"><strong aria-hidden="true">2.29.</strong> Hikvision Audio</a></li><li class="chapter-item expanded "><a href="../Integrations/Honeywell Morley.html"><strong aria-hidden="true">2.30.</strong> Honeywell Morley</a></li><li class="chapter-item expanded "><a href="../Integrations/Integrations.html"><strong aria-hidden="true">2.31.</strong> Integrations</a></li><li class="chapter-item expanded "><a href="../Integrations/Milestone.html"><strong aria-hidden="true">2.32.</strong> Milestone</a></li><li class="chapter-item expanded "><a href="../Integrations/North BT.html"><strong aria-hidden="true">2.33.</strong> North BT</a></li><li class="chapter-item expanded "><a href="../Integrations/nx-witness.html"><strong aria-hidden="true">2.34.</strong> NX Witness</a></li><li class="chapter-item expanded "><a href="../Integrations/Panasonic.html"><strong aria-hidden="true">2.35.</strong> Panasonic</a></li><li class="chapter-item expanded "><a href="../Integrations/Paxton V9 Migration.html"><strong aria-hidden="true">2.36.</strong> Paxton V9 Migration</a></li><li class="chapter-item expanded "><a href="../Integrations/Pelco Endura.html"><strong aria-hidden="true">2.37.</strong> Pelco Endura</a></li><li class="chapter-item expanded "><a href="../Integrations/RTSP.html"><strong aria-hidden="true">2.38.</strong> RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Samsung RTSP.html"><strong aria-hidden="true">2.39.</strong> Samsung RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Scantronics.html"><strong aria-hidden="true">2.40.</strong> Scantronics</a></li><li class="chapter-item expanded "><a href="../Integrations/SIP.html"><strong aria-hidden="true">2.41.</strong> SIP</a></li><li class="chapter-item expanded "><a href="../Integrations/SNMP.html"><strong aria-hidden="true">2.42.</strong> SNMP</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon Audio NVR.html"><strong aria-hidden="true">2.43.</strong> Stentofon Audio NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon.html"><strong aria-hidden="true">2.44.</strong> Stentofon</a></li><li class="chapter-item expanded "><a href="../Integrations/TDS.html"><strong aria-hidden="true">2.45.</strong> TDS</a></li><li class="chapter-item expanded "><a href="../Integrations/TDSi.html"><strong aria-hidden="true">2.46.</strong> TDSi</a></li><li class="chapter-item expanded "><a href="../Integrations/Texecom.html"><strong aria-hidden="true">2.47.</strong> Texecom</a></li><li class="chapter-item expanded "><a href="../Integrations/UNV.html"><strong aria-hidden="true">2.48.</strong> UNV</a></li><li class="chapter-item expanded "><a href="../Integrations/Vehant ITMS.html"><strong aria-hidden="true">2.49.</strong> Vehant ITMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Vemotion.html"><strong aria-hidden="true">2.50.</strong> Vemotion</a></li><li class="chapter-item expanded "><a href="../Integrations/Videonetics.html"><strong aria-hidden="true">2.51.</strong> Videonetics</a></li><li class="chapter-item expanded "><a href="../Integrations/ViewCast.html"><strong aria-hidden="true">2.52.</strong> ViewCast</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Keyboard.html"><strong aria-hidden="true">2.53.</strong> Viewscape Keyboard</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Motion Dection.html"><strong aria-hidden="true">2.54.</strong> Viewscape Motion Dection</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Viewscape Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Viewscape Systems/Desktop.html"><strong aria-hidden="true">3.1.</strong> Desktop</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Export Manager.html"><strong aria-hidden="true">3.2.</strong> Export Manager</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Controls.html"><strong aria-hidden="true">3.3.</strong> Pro Controls</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Server.html"><strong aria-hidden="true">3.4.</strong> Pro Server</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Surface.html"><strong aria-hidden="true">3.5.</strong> Surface</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape Systems.html"><strong aria-hidden="true">3.6.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape-Systems.html"><strong aria-hidden="true">3.7.</strong> Viewscape-Systems</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Viewscape 11.37.1 Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="assa-abloy"><a class="header" href="#assa-abloy">Assa Abloy</a></h1>
+<h3 id="developers"><a class="header" href="#developers">Developers</a></h3>
+<ul>
+<li>Duncan Simpson</li>
+</ul>
+<h1 id="contents"><a class="header" href="#contents">Contents</a></h1>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#functionality">Functionality</a>
+<ul>
+<li><a href="#supported-functionality">Supported Functionality</a></li>
+<li><a href="#pre-requisites">Pre-requisites</a></li>
+<li><a href="#customer-requirements">Customer Requirements</a>
+<ul>
+<li><a href="#assa-abloy-server-details">Assa Abloy Server Details</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#installation">Installation</a>
+<ul>
+<li><a href="#viewscape-pro-server">VTAS Pro Server</a>
+<ul>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#operation">Operation</a></li>
+</ul>
+</li>
+<li><a href="#alarms-and-pro-event-configuration">Alarms and Pro Event Configuration</a>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#pro-event-setup-basic">Pro Event Setup Basic</a></li>
+<li><a href="#pro-event-setup-advanced">Pro Event Setup Advanced</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#troubleshooting">Troubleshooting</a>
+<ul>
+<li><a href="#common-issues">Common Issues</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="overview"><a class="header" href="#overview">Overview</a></h1>
+<p>The purpose of this document is to provide instructions for the
+integration of Assa Abloy systems into Viewscape.</p>
+<h1 id="functionality"><a class="header" href="#functionality">Functionality</a></h1>
+<h2 id="supported-functionality"><a class="header" href="#supported-functionality">Supported Functionality</a></h2>
+<ul>
+<li>Monitoring of Controller and Door status in Viewscape</li>
+<li>Triggering alerts via Pro Events based on Assa Abloy system events</li>
+<li>Basic door functions:
+<ul>
+<li>Pulse Open</li>
+<li>Force door open (on/off)</li>
+<li>Force door close (on/off)</li>
+</ul>
+</li>
+</ul>
+<h2 id="pre-requisites"><a class="header" href="#pre-requisites">Pre-requisites</a></h2>
+<ul>
+<li>Viewscape Version 8.30 or above, Viewscape Controls 1.8.4 or above.</li>
+<li>Integration is via a protocol, there is no SDK to install.</li>
+<li>The only dependency is AssaAbloy.dll that can be found in the
+Depends folder and should be referenced correctly by Pro Server
+already by the usual probing path method in the config.</li>
+</ul>
+<h2 id="customer-requirements"><a class="header" href="#customer-requirements">Customer Requirements</a></h2>
+<p>This section contains a list of requirements which need to be obtained
+from the customer to configure the integration.</p>
+<h3 id="assa-abloy-server-details"><a class="header" href="#assa-abloy-server-details">Assa Abloy Server Details</a></h3>
+<p>The customer or installer must be able to provide the following
+information on the Assa Abloy Server that Viewscape Pro Server will
+communicate with over https.</p>
+<ul>
+<li>IP4 Address</li>
+<li>SSH Event Port (default is 5003)</li>
+<li>Credentials (default is admin account is master:master)</li>
+</ul>
+<h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
+<h2 id="viewscape-pro-server"><a class="header" href="#viewscape-pro-server">Viewscape Pro Server</a></h2>
+<h3 id="configuration"><a class="header" href="#configuration">Configuration</a></h3>
+<p>Configure the following settings on Viewscape Pro Server to allow
+communication with the Assa Abloy Server:</p>
+<ul>
+<li>AssaAbloyServerIP</li>
+<li>AssaAbloyServerEventPort</li>
+<li>AssaAbloyUsername</li>
+<li>AssaAbloyPassword</li>
+</ul>
+<p>In Addition:</p>
+<h4 id="assaabloystatusrefreshsecs"><a class="header" href="#assaabloystatusrefreshsecs">AssaAbloyStatusRefreshSecs</a></h4>
+<p>The time in seconds between each refresh of the door statuses. The default is 10 secs (safe). This should be reduced normally to around 5 secs, but it will depend on the available performance of the Server and number of Doors on the system. </p>
+<p>The refresh will trigger first communication with Assa Abloy, these results are then parsed and the DB table AssaAbloyDoor_TBL is then updated and all Viewscape Clients are informed of this update. Viewscape Clients will then refresh their data from this table. </p>
+<p>So, finding the right balance between update frequency and performance is crucial. </p>
+<h4 id="debugassaabloy"><a class="header" href="#debugassaabloy">DebugAssaAbloy</a></h4>
+<p>Turns on more verbose logging within the log. All messages will have the following prefix: </p>
+<blockquote>
+<p>[Assa Abloy]:</p>
+</blockquote>
+<h3 id="operation"><a class="header" href="#operation">Operation</a></h3>
+<ul>
+<li>On start up of the Pro Server, a connection will be made using the
+details from the settings. This will initialise the maintenance of
+the AssaAbloyDoor_TBL table in the DB and create a constant
+connection to the Assa Abloy event stream over TCP/IP.</li>
+<li>If the connection is lost for any reason (network fault, Assa Abloy
+server reboot etc.) Pro Server will continue to try and re-establish
+the connection every 5 seconds.</li>
+</ul>
+<h2 id="alarms-and-pro-event-configuration"><a class="header" href="#alarms-and-pro-event-configuration">Alarms and Pro Event Configuration</a></h2>
+<h3 id="introduction"><a class="header" href="#introduction">Introduction</a></h3>
+<ul>
+<li>Be warned setup of Pro Events can be more complicated than usual due
+to the nature of the events provided by the Assa Abloy system.</li>
+<li>The supported events, IE. Assa Abloy events we currently support are
+automatically loaded into the table AssaAbloyEvent_TBL. This is to
+increase overall performance of Pro Server by not checking events we
+aren't interested in such as a new user or a change in the
+configuration of the system, and also to provide the user with a
+list of events they can choose from when setting up the Pro Events.
+-- The list is vast.</li>
+<li>If the client requires an additional event that is not in the list,
+then it can be added to the database by an engineer without needing
+a software upgrade. The current list was provided from the Assa
+Abloy documentation with a few obvious errors fixed.</li>
+<li>Pro Events can optionally be setup for specific objects (EG.
+Doors/Controllers/users etc.). This requires a little and
+potentially access to the Assa Abloy client as I will discuss more
+of in the section below.</li>
+</ul>
+<h3 id="pro-event-setup-basic"><a class="header" href="#pro-event-setup-basic">Pro Event Setup Basic!</a></h3>
+<p><a href="screenshots/AssaAbloy/image2.png"></a></p>
+<ul>
+<li>First select &quot;Assa Abloy&quot; from the trigger field on the Pro Event
+form, then select the Assa Abloy event you would like to trigger
+from the list.</li>
+<li>Pro Server will raise an alert from the Pro Event when it detects
+any instance of the Assa Abloy event specified.</li>
+</ul>
+<h3 id="pro-event-setup-advanced"><a class="header" href="#pro-event-setup-advanced">Pro Event Setup Advanced</a></h3>
+<p>If you would like to setup more advanced events, then you can optionally
+use the type and value fields. NOTE: You must either leave both blank or
+specify them both.</p>
+<p>If you aren't familiar with the Assa Abloy client and the event
+type-value arguments that are included on events then you will have to
+access the Assa Abloy client and view the logs to see what type and
+value arguments you might require.</p>
+<p><img src="screenshots/AssaAbloy/image3.png" alt="" /></p>
+<p><img src="screenshots/AssaAbloy/image4.png" alt="" />
+In the logs section, you can see a list of
+events. Double click on an event and you will see additional arguments
+for the event. Events have different arguments depending on the event.
+For example, the event Door Opened (below left) has a lot more arguments
+than Door Tamper (below right)</p>
+<p><img src="screenshots/AssaAbloy/image5.png" alt="" /></p>
+<p>You can specify an argument paring shown above in the Pro Events form.
+Therefore if you would like to setup a Pro Event to trigger every time
+the door &quot;Door1&quot; is opened you would create a Pro Event to look
+something like this below:</p>
+<p><img src="screenshots/AssaAbloy/image6.png" alt="" /></p>
+<h1 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h1>
+<h2 id="common-issues"><a class="header" href="#common-issues">Common Issues</a></h2>
+<ul>
+<li>Pro Events not triggering: Verify the event in the Assa Abloy client
+as demonstrated above. If you have specified an argument, check the
+case. These settings are case-sensitive.</li>
+<li>Required Assa Abloy event available in the list: You will need to
+manually insert the event into the database table
+AssaAbloyEvent_TBL. You may need to ask someone for help if you
+aren't competent or comfortable doing this. Every effort has been
+made to include by default all likely events and more.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Integrations/AMAG.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../Integrations/Avigilon.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Integrations/AMAG.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../Integrations/Avigilon.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

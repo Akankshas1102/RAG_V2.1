@@ -1,0 +1,489 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>TDSi - Viewscape 11.37.1 Manual</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Introduction.html"><strong aria-hidden="true">1.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Integrations</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Integrations/Active Directory.html"><strong aria-hidden="true">2.1.</strong> Active Directory</a></li><li class="chapter-item expanded "><a href="../Integrations/Adpro.html"><strong aria-hidden="true">2.2.</strong> Adpro</a></li><li class="chapter-item expanded "><a href="../Integrations/AMAG.html"><strong aria-hidden="true">2.3.</strong> AMAG</a></li><li class="chapter-item expanded "><a href="../Integrations/Assa Abloy.html"><strong aria-hidden="true">2.4.</strong> Assa Abloy</a></li><li class="chapter-item expanded "><a href="../Integrations/Avigilon.html"><strong aria-hidden="true">2.5.</strong> Avigilon</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Camera Station.html"><strong aria-hidden="true">2.6.</strong> Axis Camera Station</a></li><li class="chapter-item expanded "><a href="../Integrations/AXIS IO.html"><strong aria-hidden="true">2.7.</strong> AXIS IO</a></li><li class="chapter-item expanded "><a href="../Integrations/Axis Virtual Camera.html"><strong aria-hidden="true">2.8.</strong> Axis Virtual Camera</a></li><li class="chapter-item expanded "><a href="../Integrations/Bosch Analytics Motion.html"><strong aria-hidden="true">2.9.</strong> Bosch Analytics Motion</a></li><li class="chapter-item expanded "><a href="../Integrations/BVMS.html"><strong aria-hidden="true">2.10.</strong> Bosch BVMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore Footage Nuke.html"><strong aria-hidden="true">2.11.</strong> Coldstore Footage Nuke</a></li><li class="chapter-item expanded "><a href="../Integrations/Coldstore NVR.html"><strong aria-hidden="true">2.12.</strong> Coldstore NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Commend.html"><strong aria-hidden="true">2.13.</strong> Commend</a></li><li class="chapter-item expanded "><a href="../Integrations/Conxtd.html"><strong aria-hidden="true">2.14.</strong> Conxtd</a></li><li class="chapter-item expanded "><a href="../Integrations/CSL Dualcom.html"><strong aria-hidden="true">2.15.</strong> CSL Dualcom</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics ANPR.html"><strong aria-hidden="true">2.16.</strong> Daktronics ANPR</a></li><li class="chapter-item expanded "><a href="../Integrations/Daktronics.html"><strong aria-hidden="true">2.17.</strong> Daktronics</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros Alarms.html"><strong aria-hidden="true">2.18.</strong> Dedicated Micros Alarms</a></li><li class="chapter-item expanded "><a href="../Integrations/Dedicated Micros V9.html"><strong aria-hidden="true">2.19.</strong> Dedicated Micros V9</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec User.html"><strong aria-hidden="true">2.20.</strong> Entrotec User</a></li><li class="chapter-item expanded "><a href="../Integrations/Entrotec.html"><strong aria-hidden="true">2.21.</strong> Entrotec</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun Requirements.html"><strong aria-hidden="true">2.22.</strong> EverRun Requirements</a></li><li class="chapter-item expanded "><a href="../Integrations/EverRun.html"><strong aria-hidden="true">2.23.</strong> EverRun</a></li><li class="chapter-item expanded "><a href="../Integrations/Failover Solutions.html"><strong aria-hidden="true">2.24.</strong> Failover Solutions</a></li><li class="chapter-item expanded "><a href="../Integrations/GDPR Manual.html"><strong aria-hidden="true">2.25.</strong> GDPR Manual</a></li><li class="chapter-item expanded "><a href="../Integrations/Guard Tour.html"><strong aria-hidden="true">2.26.</strong> Guard Tour</a></li><li class="chapter-item expanded "><a href="../Integrations/Hanwha.html"><strong aria-hidden="true">2.27.</strong> Hanwha</a></li><li class="chapter-item expanded "><a href="../Integrations/Heitel.html"><strong aria-hidden="true">2.28.</strong> Heitel</a></li><li class="chapter-item expanded "><a href="../Integrations/Hikvision Audio.html"><strong aria-hidden="true">2.29.</strong> Hikvision Audio</a></li><li class="chapter-item expanded "><a href="../Integrations/Honeywell Morley.html"><strong aria-hidden="true">2.30.</strong> Honeywell Morley</a></li><li class="chapter-item expanded "><a href="../Integrations/Integrations.html"><strong aria-hidden="true">2.31.</strong> Integrations</a></li><li class="chapter-item expanded "><a href="../Integrations/Milestone.html"><strong aria-hidden="true">2.32.</strong> Milestone</a></li><li class="chapter-item expanded "><a href="../Integrations/North BT.html"><strong aria-hidden="true">2.33.</strong> North BT</a></li><li class="chapter-item expanded "><a href="../Integrations/nx-witness.html"><strong aria-hidden="true">2.34.</strong> NX Witness</a></li><li class="chapter-item expanded "><a href="../Integrations/Panasonic.html"><strong aria-hidden="true">2.35.</strong> Panasonic</a></li><li class="chapter-item expanded "><a href="../Integrations/Paxton V9 Migration.html"><strong aria-hidden="true">2.36.</strong> Paxton V9 Migration</a></li><li class="chapter-item expanded "><a href="../Integrations/Pelco Endura.html"><strong aria-hidden="true">2.37.</strong> Pelco Endura</a></li><li class="chapter-item expanded "><a href="../Integrations/RTSP.html"><strong aria-hidden="true">2.38.</strong> RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Samsung RTSP.html"><strong aria-hidden="true">2.39.</strong> Samsung RTSP</a></li><li class="chapter-item expanded "><a href="../Integrations/Scantronics.html"><strong aria-hidden="true">2.40.</strong> Scantronics</a></li><li class="chapter-item expanded "><a href="../Integrations/SIP.html"><strong aria-hidden="true">2.41.</strong> SIP</a></li><li class="chapter-item expanded "><a href="../Integrations/SNMP.html"><strong aria-hidden="true">2.42.</strong> SNMP</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon Audio NVR.html"><strong aria-hidden="true">2.43.</strong> Stentofon Audio NVR</a></li><li class="chapter-item expanded "><a href="../Integrations/Stentofon.html"><strong aria-hidden="true">2.44.</strong> Stentofon</a></li><li class="chapter-item expanded "><a href="../Integrations/TDS.html"><strong aria-hidden="true">2.45.</strong> TDS</a></li><li class="chapter-item expanded "><a href="../Integrations/TDSi.html" class="active"><strong aria-hidden="true">2.46.</strong> TDSi</a></li><li class="chapter-item expanded "><a href="../Integrations/Texecom.html"><strong aria-hidden="true">2.47.</strong> Texecom</a></li><li class="chapter-item expanded "><a href="../Integrations/UNV.html"><strong aria-hidden="true">2.48.</strong> UNV</a></li><li class="chapter-item expanded "><a href="../Integrations/Vehant ITMS.html"><strong aria-hidden="true">2.49.</strong> Vehant ITMS</a></li><li class="chapter-item expanded "><a href="../Integrations/Vemotion.html"><strong aria-hidden="true">2.50.</strong> Vemotion</a></li><li class="chapter-item expanded "><a href="../Integrations/Videonetics.html"><strong aria-hidden="true">2.51.</strong> Videonetics</a></li><li class="chapter-item expanded "><a href="../Integrations/ViewCast.html"><strong aria-hidden="true">2.52.</strong> ViewCast</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Keyboard.html"><strong aria-hidden="true">2.53.</strong> Viewscape Keyboard</a></li><li class="chapter-item expanded "><a href="../Integrations/Viewscape Motion Dection.html"><strong aria-hidden="true">2.54.</strong> Viewscape Motion Dection</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Viewscape Systems</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Viewscape Systems/Desktop.html"><strong aria-hidden="true">3.1.</strong> Desktop</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Export Manager.html"><strong aria-hidden="true">3.2.</strong> Export Manager</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Controls.html"><strong aria-hidden="true">3.3.</strong> Pro Controls</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Pro Server.html"><strong aria-hidden="true">3.4.</strong> Pro Server</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Surface.html"><strong aria-hidden="true">3.5.</strong> Surface</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape Systems.html"><strong aria-hidden="true">3.6.</strong> Viewscape Systems</a></li><li class="chapter-item expanded "><a href="../Viewscape Systems/Viewscape-Systems.html"><strong aria-hidden="true">3.7.</strong> Viewscape-Systems</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Viewscape 11.37.1 Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="tdsi"><a class="header" href="#tdsi">TDSi</a></h1>
+<h3 id="developers"><a class="header" href="#developers">Developers</a></h3>
+<p>???</p>
+<h1 id="contents"><a class="header" href="#contents">Contents</a></h1>
+<ul>
+<li><a href="#prerequisites">Prerequisites</a>
+<ul>
+<li><a href="#requirements">Requirements</a></li>
+</ul>
+</li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#next-steps">Next Steps</a></li>
+<li><a href="#sdk-installation">SDK Installation</a>
+<ul>
+<li><a href="#acu-configuration">ACU Configuration</a></li>
+<li><a href="#running-the-sdk">Running the SDK</a></li>
+<li><a href="#viewscape-device-setup">Viewscape Device Setup</a>
+<ul>
+<li><a href="#vtas-pro-live">VTAS Pro Live</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#troubleshooting">Troubleshooting</a>
+<ul>
+<li><a href="#appendix">Appendix</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="prerequisites"><a class="header" href="#prerequisites">Prerequisites</a></h1>
+<p>Before you install EXgarde, ensure that you have done the following:</p>
+<ul>
+<li>Restarted the machine.</li>
+<li>Checked that ASP.Net is enabled in windows features on the target PC.</li>
+<li>Ensure that .NET 2.0 or greater is installed on the target PC.</li>
+</ul>
+<h2 id="requirements"><a class="header" href="#requirements">Requirements</a></h2>
+<ul>
+<li>To begin you need the EXgarde SDK address, it is usually something
+like this: 
+<ul>
+<li><code>http://{hostnameofmachine}/Exgarde/</code></li>
+</ul>
+</li>
+<li>To access the config file for the SDK, navigate to 
+<ul>
+<li><code>Program Files (x86)/TDSi/Exgarde/SDK/Runtime/Service</code> </li>
+<li>Look for <code>Exgarde.Network.Service.exe.config.</code>
+&gt;<strong>IMPORTANT</strong> -- only modify this file if you have installed EXgarde on an existing SQL Server
+&gt;Instance. If that is not the case, then I <strong>strongly</strong> suggest that
+&gt;you do not modify the file. Refer to <strong>Figure F</strong>. There you will
+&gt;see the web address for the SDK which will be useful for setting up
+&gt;Viewscape.</li>
+</ul>
+</li>
+<li>For Viewscape Setup, make sure that in Viewscape Settings Editor
+V3.5 you have set the Exgarde address so that VTAS Pro Server can
+connect to the SDK. (Refer to <strong>Figure G</strong>)</li>
+</ul>
+<h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
+<h2 id="install-exgarde"><a class="header" href="#install-exgarde">Install EXgarde</a></h2>
+<p><strong>IMPORTANT</strong></p>
+<p>Before you begin installation, ensure that you have created/or have a
+separate VM Server for installing Exgarde. Exgarde needs to be installed
+on a standalone server <strong>do not</strong> install it on a server that has
+ProServer running on it or on the same SQL Server Instance as SQL
+Server.</p>
+<p>This is to reduce the level of confusion and the risk of configuration
+errors that might occur due to installing it on the same machine or
+existing SQL Server.</p>
+<p>In this installation of the Exgarde, you will be installing the
+following applications:</p>
+<h3 id="license-server"><a class="header" href="#license-server"><strong>License Server</strong></a></h3>
+<p>This application is very crucial and needs to run in
+the background. (It is the Exgarde Server) and it has all the license
+information required for the Exgarde SDK. Without it you cannot run the
+SDK Service, and the rest of the Exgarde applications mentioned in this
+document.</p>
+<h3 id="exgarde-communication"><a class="header" href="#exgarde-communication"><strong>EXgarde Communication</strong></a></h3>
+<p>This app listens and fetches any incoming
+events coming from the ACU (Access Control Unit). It also displays the
+current state of the ACU whether it is on/off-line.</p>
+<h3 id="exgarde-synchronizer"><a class="header" href="#exgarde-synchronizer"><strong>EXgarde Synchronizer</strong></a></h3>
+<p>You will need this application to build the
+Fusion Database which is required by the SDK.</p>
+<h3 id="exgarde-fusion-you-will-need-to-configure-and-start-a-service"><a class="header" href="#exgarde-fusion-you-will-need-to-configure-and-start-a-service"><strong>EXgarde Fusion</strong> You will need to configure and start a service</a></h3>
+<p>instance for Fusion so that the SDK can connect to the Fusion Database,
+which will update data in the EXgarde Database.</p>
+<h3 id="exgarde-explorer"><a class="header" href="#exgarde-explorer"><strong>EXgarde Explorer</strong></a></h3>
+<p>A Client Application that allows you to add and configure any specific objects/devices/personnel that are required in
+the EXgarde Software (i.e. ACUs, Keyholders, Key, Areas, Groups etc.).</p>
+<blockquote>
+<p><strong>IMPORTANT:</strong> Make sure that all the applications mentioned above are
+running (apart from EXgarde Explorer), you can run this if the customer
+wants to configure, new ACUs or Keyholders any configuration that is
+specific to Exgarde.</p>
+</blockquote>
+<p><strong>Step by Step installation</strong></p>
+<ol>
+<li>Navigate into the folder called <strong>DISK 1</strong> and run <strong>'Setup.exe'</strong>
+in the root of the folder.</li>
+<li>During the installation process, you will be asked which product
+type of EXgarde you want to install. <strong>IMPORTANT</strong> Make sure you
+select Exgarde Professional because we have been issued a
+professional license key.</li>
+<li>Then when asked about the Installation Type, Install Exgarde Server
+(This section is up to you, but I recommend choosing the first
+option which installs the SQL Server Express). <strong>Refer to Figure
+B.</strong></li>
+<li><strong>NOTE</strong> the next section all the applications you will need and the
+once I have mentioned will be ticked by default, do not untick any!</li>
+<li>The next page will show you the target directory where EXgarde will
+be installed. Leave them unchanged.</li>
+<li>Lastly, some personalisation like which application do you want to
+create a desktop icon for.</li>
+<li><strong>Next page --</strong> make sure you tick license server to be the first
+software that starts up.</li>
+</ol>
+<h1 id="next-steps"><a class="header" href="#next-steps">Next Steps</a></h1>
+<p>Now that you have successfully installed EXgarde, proceed to launch the
+EXgarde Explorer software. Login using the following password: <strong>TDSi.</strong>
+Then click on the link to the Documentation Link and you will find
+documentation on every part of the application. I highly recommend that
+you read the ExSync Issue, EXgarde Fusion Issue and the EXgarde SDK
+Issue.</p>
+<p>In addition, in Exgarde Explorer, when you press the <strong>F1 Key</strong> on the
+Keyboard, this will open the application help section, which has step by
+step instructions on how to set up the ACU etc.</p>
+<h2 id="acu--door-configuration-setup"><a class="header" href="#acu--door-configuration-setup">ACU &amp; Door Configuration Setup</a></h2>
+<p>In the EXgarde Explorer app, select ACU Wizard and follow the
+step-by-step guide and configure the ACU and the names and the number of
+doors, readers associated with the ACU.</p>
+<p>Make sure whilst configuring the doors you give appropriate names for
+the doors (i.e. Door 1, Door 2 etc). Do the same for Inputs and Readers.</p>
+<p><strong>Refer to Figure A for step-by-step ACU Set Up.</strong></p>
+<blockquote>
+<p><strong>IMPORTANT</strong> -- Remember to set the network address of the machine
+EXgarde is installed on, in the Settings Editor. Look for ExgardeAddress
+setting in the list of settings for Pro Server.</p>
+</blockquote>
+<h1 id="sdk-installation"><a class="header" href="#sdk-installation">SDK Installation</a></h1>
+<p>Again, there is a step-by-step guide available in EXgarde Explorer but
+when you run the installation make sure (especially if you have
+installed with the option -- <em><strong>EXgarde Server -- Install SQL Server
+Express with Exgarde or use existing SQL Express</strong></em>), you will have
+default credentials for the SDK. The SDK will use those credentials to
+connect so <strong>do not</strong> change it. <strong>ONLY</strong> change the credentials if you
+have done a custom installation of EXgarde.</p>
+<h2 id="acu-configuration"><a class="header" href="#acu-configuration">ACU Configuration</a></h2>
+<p><strong>Figure A.</strong></p>
+<ol>
+<li>Add PC name</li>
+</ol>
+<p><img src="screenshots/TDSi/image2.png" alt="" /></p>
+<ol start="2">
+<li>Add IP Address of the Kit</li>
+</ol>
+<p><img src="screenshots/TDSi/image3.png" alt="" /></p>
+<ol start="3">
+<li>Then ACU Details</li>
+</ol>
+<p><img src="screenshots/TDSi/image4.png" alt="" /></p>
+<ol start="4">
+<li>Add the Type of Reader on ACU Device</li>
+</ol>
+<p><img src="screenshots/TDSi/image5.png" alt="" /></p>
+<ol start="5">
+<li>Add Number of Doors</li>
+</ol>
+<p><img src="screenshots/TDSi/image6.png" alt="" /></p>
+<ol start="6">
+<li>Configure number of readers for each Door.</li>
+</ol>
+<p><img src="screenshots/TDSi/image7.png" alt="" /></p>
+<ol start="7">
+<li>Assign Readers to Areas</li>
+</ol>
+<p><img src="screenshots/TDSi/image8.png" alt="" /></p>
+<h2 id="exfusion-configuration"><a class="header" href="#exfusion-configuration">EXFusion Configuration</a></h2>
+<blockquote>
+<p>Before you begin this configuration process, make sure that you have
+completed ExSync Synchronisation process, by building a new Fusion
+Database. Get the connect string from the Fusion Database.</p>
+</blockquote>
+<ol>
+<li>Configure the Service -- note that the connection string may be slightly different.</li>
+</ol>
+<p><img src="screenshots/TDSi/image9.png" alt="" /></p>
+<ol start="2">
+<li>Once you have configured everything press the test button to ensure that the connection string is correct, and it connects to Fusion DB.</li>
+</ol>
+<p><img src="screenshots/TDSi/image10.png" alt="" /></p>
+<ol start="3">
+<li>Double click on the service to open the Service Details dialog and start the service.</li>
+</ol>
+<p><img src="screenshots/TDSi/image11.png" alt="" /></p>
+<h2 id="running-the-sdk"><a class="header" href="#running-the-sdk">Running the SDK</a></h2>
+<ol>
+<li>You can open Windows Services and look for the Service EXgarde SDK
+the status is usually Automatic, but it is advisory to set to manual
+so that you can ensure license server is running before you run the
+service.</li>
+<li>Alternatively, navigate using File Explorer/Command Prompt to the
+following directory: <em>Exgarde/SDK/Runtime/Service/</em> with the
+following command -- <strong>exgarde.network.service /console</strong></li>
+</ol>
+<p>For option number two you should see the SDK logs in the console, and
+whether Pro Server was successful in connecting to the server.</p>
+<p>Here you can see a unique client Id as well as the any request Pro
+Server is makes to Exgarde: <img src="screenshots/TDSi/image12.png" alt="A picture containing text Description automatically generated" /></p>
+<h2 id="viewscape-device-setup"><a class="header" href="#viewscape-device-setup">Viewscape Device Setup</a></h2>
+<p><strong>NOTE</strong> that the TDSi Version 9 integration will only work on Viewscape
+version 9.22 or higher. Similarly, Pro Server needs to be on version
+9.22.0 or higher. Also, ensure you have the latest version of Viewscape
+Settings Editor installed.</p>
+<p>In Viewscape, begin by setting up the relevant TDSi Devices (They will
+usually be TDSi Door, Input and ACU (Access Control Unit)). Also, the
+TDSi Device Configuration on Viewscape is quite simple you can configure
+the device as stand-alone devices rather than parent and child devices.</p>
+<p><img src="screenshots/TDSi/image13.png" alt="" /></p>
+<p>When you are adding a new TDSi Device (in this example we are adding a
+Door), ensure that the Door ID is the same name as the name of the Door
+on Exgarde Explorer. This is because when events are triggered incoming
+events are only handled in Viewscape when the Device ID matches the name
+of the Device Configured in Exgarde Explorer.</p>
+<p><img src="screenshots/TDSi/image14.png" alt="" /></p>
+<p>Viewscape currently supports all the events for Doors, Inputs and ACU.
+Some of the events cannot be tested due because they cannot be triggered
+manually. Examples of the following ACU events: Progress, System Fault,
+Mains Power On/Off Event. However, events such as Reader Box Faulty and
+Reader Box Fixed can be generated manually.</p>
+<p>Here is a list of Device Events that can be tested:</p>
+<p>Door Events:</p>
+<ul>
+<li>Access Granted</li>
+<li>Access Denied</li>
+<li>Invalid Key</li>
+<li>Egress On/Off</li>
+<li>Door Open/ Closed</li>
+<li>Door Forced</li>
+<li>Door Ajar</li>
+</ul>
+<p>ACU Events:</p>
+<ul>
+<li>Timeout</li>
+<li>Case Open/Closed</li>
+<li>Return from Timeout</li>
+<li>Mains Power Off/On</li>
+<li>Time Error</li>
+<li>Progress</li>
+</ul>
+<p>Input Events:</p>
+<ul>
+<li>Input On/Off</li>
+</ul>
+<h3 id="vtas-pro-live"><a class="header" href="#vtas-pro-live">VTAS Pro Live</a></h3>
+<p>In VTAS Pro Live, once all the TDSi devices and it is events have been
+configured, when you trigger the event, you should expect to see the
+alert listed in the Alerts window. Refer to <strong>Figure D</strong> in
+<strong>Appendix.</strong></p>
+<p>Similarly, in Pro Live, in the Device List window, you can view all the
+TDSi Devices that have been configured in Viewscape and you can invoke
+actions, which are specific to that device. Refer to <strong>Figure E</strong>.</p>
+<h1 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h1>
+<ol>
+<li>If you are testing the events system and you do not see any events
+appearing on the software or the SDK Webpage, ensure that you have
+EXgarde Communications running. Without this app, you cannot receive
+any live event messages.</li>
+<li>If you are having trouble connection to the SDK check if the SDK is
+running as a service in the first place. 
+<ul>
+<li>To run the SDK such a way that one can see the logging information (for testing/debugging purposes), run the following command in Command Prompt which needs to point to the following Directory: 
+<ul>
+<li><code>Exgarde/SDK/Runtime/Service/</code></li>
+</ul>
+</li>
+<li>With the following command :
+<ul>
+<li><code>exgarde.network.service /console</code>
+(Refer to Figure C)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SDK is unable to run... 
+<ul>
+<li>Make sure you are connected by Starting the License Server and make sure that you have created a Fusion Service and it is running in EXgarde Fusion.</li>
+</ul>
+</li>
+<li>If Fusion Service is unable to start and displays status: 
+<ul>
+<li><code>&quot;ERROR - RETRY&quot;</code></li>
+<li>Make sure you use the ExSync Synchronisation tool to purgethe database, and try again.</li>
+</ul>
+</li>
+</ol>
+<h2 id="appendix"><a class="header" href="#appendix">Appendix</a></h2>
+<p><img src="screenshots/TDSi/image15.png" alt="" /></p>
+<p><em>Figure B. EXgarde Installation Dialog -- Software Installation Type.</em></p>
+<p><img src="screenshots/TDSi/image16.png" alt="" /></p>
+<p><em>Figure C. Exgarde Service running on in the terminal.</em></p>
+<p><img src="screenshots/TDSi/image17.png" alt="" /></p>
+<p><em>Figure D -- Pro Live: Alerts Window displaying various alarm events coming from Exgarde.</em></p>
+<p><img src="screenshots/TDSi/image18.png" alt="" /></p>
+<p><em>Figure E -- Snapshot of a list of different actions that are available to the TDSi Door Device.</em></p>
+<p><img src="screenshots/TDSi/image19.png" alt="" /></p>
+<p><img src="screenshots/TDSi/image20.png" alt="" /></p>
+<p><em>Figure F</em> -- The Exgarde SDK address within the SDK Config.</p>
+<p><img src="screenshots/TDSi/image21.png" alt="" /></p>
+<p>Only set this to true if you want ProServer to log additional information for Troubleshooting any issues that may arise.</p>
+<p><img src="screenshots/TDSi/image22.png" alt="" /></p>
+<p><em>Figure G -- Snapshot of the TDSi Exgarde settings. These settings can be found in Viewscape Settings Editor V3.5 under Pro Server Settings.</em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Integrations/TDS.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../Integrations/Texecom.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Integrations/TDS.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../Integrations/Texecom.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
