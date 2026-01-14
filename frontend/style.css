@@ -111,6 +111,14 @@ body {
     color: var(--text-secondary);
     cursor: pointer;
     transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.history-item-text {
+    flex: 1;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -121,9 +129,64 @@ body {
     color: var(--text-primary);
 }
 
+.history-item.active {
+    background: var(--hover-bg);
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.delete-chat-btn {
+    padding: 4px;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.history-item:hover .delete-chat-btn {
+    opacity: 1;
+}
+
+.delete-chat-btn:hover {
+    background: var(--bg-tertiary);
+    color: #ef4444;
+}
+
 .sidebar-footer {
     padding: 12px;
     border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.clear-history-btn {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.clear-history-btn:hover {
+    background: var(--hover-bg);
+    border-color: #ef4444;
+    color: #ef4444;
 }
 
 .theme-toggle {
